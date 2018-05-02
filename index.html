@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tasha Mitchell">
+    <meta name="description" content="HappyTail LLC: Dog Walking Company">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Tail VA LLC: Dog Walking and Boarding Company</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /*Navgation Bar Styling Begins here*/
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            background-color: #1B110C;
+        }
+
+        .nav-item {
+            width: 100%;
+            padding: 2em;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 2vw;
+            color: white;
+        }
+
+        .fakenav-item {
+            text-decoration: none;
+            padding: 20px 60px;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 2vw;
+            color: #1B110C;
+        }
+
+        /*Logo styling which is drawn with SVG. Not entirely sure yet if this is supported by all browsers. Looking into it...*/
+
+        svg {
+            position: absolute;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            top: 100%;
+            left: 52%;
+            margin: -50%, -50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.5;
+        }
+
+        path d {
+            flex: 1;
+            filter: blur(.01);
+        }
+
+        .logopic {
+            width: 120px;
+            position: absolute;
+            top: 50%;
+            left: 52%;
+            margin: -50%, -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /*Navigation Bar Styling Ends here*/
+
+        /*CAROUSEL START. Mostly Operated by Javascript*/
+
+        .carousel-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .slide-container {
+            display: none;
+        }
+
+
+        .caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -50%, -50%;
+            transform: translate(-50%, -50%);
+
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 2vw;
+            color: white;
+        }
+
+        .caption h1 {
+            font-weight: 100;
+        }
+
+
+
+
+        /**/
+
+        /*Responsiveness START*/
+
+        /*Responsiveness END*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Navigation Bar Content START-->
+        <nav>
+            <!--Main Logo CONTENT START-->
+            <div class="mainlogo">
+                <a href="index.html" alt="Happy Tail logo">
+                    <svg viewBox="-1 0 101 100">
+                        <path d="M0,0 L100,0 L100,60 L50,100 L0,60z" fill="white" /> Sorry, your browser does not support inline SVG.
+                        <img src="images/logo/logopic.png" class="logopic">
+                    </svg>
+                </a>
+            </div>
+            <!--END Main Logo CONTENT-->
+
+            <!--Nav List items-->
+            <div class="nav-item">
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Services</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Pricing</a>
+            </div>
+            <div class="fakenav-item">
+                <a href="#"></a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Blog</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">About</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <!--END Nav list items-->
+
+        <!--END Navigation Bar Content-->
+
+        <!-- START Slideshow container -->
+
+        <div class="carousel-container">
+
+            <!--First Slide container START-->
+            <div class="slide-container">
+                <video class="puppy-beach-video" width="100%" preload="auto" loop="" autoplay="" style="visibility:visible; width:100%;">
+                    <source src="media/puppy_beach.mp4" type="video/mp4">
+                    <source src="media/puppy_beach.webm" type="video/webm">
+                </video>
+
+                <!--First Slide caption-->
+                <div class="caption">
+                    <h1>
+                        Let's Take a Walk
+                    </h1>
+                    <a href="contact.html">
+                        <button class="bookapp">Book An Appointment Today</button>
+                    </a>
+                </div>
+                <!--END First Slide caption-->
+            </div>
+            <!--END First Slide container-->
+
+            <!--Second Slide Containter START-->
+
+            <div class="slide-container">
+
+                <!--Second Slide Caption-->
+
+                <img src="images/photography/sad_doggy.jpeg" class="slide-img" alt="Dog looking tentively into the camera" style="width:100%">
+
+                <div class="caption">
+
+                    <h1>Why Choose Us</h1>
+
+
+                    <p> Our mission is to provide the best service for your four legged family member. We specialize in one-on-one
+                        care to meet your dog’s needs and happiness. We know every dog is different, this is why Happy Tail
+                        LLC provides a unique services to our clients and their dogs.</p>
+
+                    <a href="services.html">
+                        <button class="bookapp">More on our services</button>
+                    </a>
+
+                </div>
+
+                <!--END Second Slide Caption-->
+
+            </div>
+
+            <!--END Second Slide Containter-->
+
+
+            <!--START Third Slide Container-->
+            <div class="slide-container">
+
+                    <img src="images/photography/paw_hand.jpeg" class="slide-img" alt="Dog paw and human hand curved to make a heart" style="width:100%">
+
+
+                <!--START Caption Content container-->
+                <div class="caption">
+
+                    <h1>Come Find Us</h1>
+
+                    <p>
+                        Main location
+                        <br> 3580 Ellery Circle
+                        <br> Falls Church, VA 22041
+                        <br>
+
+
+
+                        <br>We only provide services in the following areas
+                        <br>
+
+
+
+                        <br>Virgina: Arlington, Alexandria, Falls Church, Annandale, Vienna
+                        <br>
+                    </p>
+
+                    <a href="contact.html">
+                        <button class="bookapp">Send us a message</button>
+                    </a>
+                </div>
+                <!--END Caption Content container-->
+            </div>
+            <!--END Third Slide Container-->
+
+            <!--Previous and Next buttons-->
+            <div class="slide-nav-buttons">
+                <a href="prev" onclick="plusSlides(-1)"></a>
+                <a href="next" onclick="plusSlides(1)"></a>
+            </div>
+
+            <!--END previous and Next buttons-->
+
+            <!--START Dots navigation counter-->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!--END Dots navigation counter-->
+
+        </div>
+        <!--END Slideshow container-->
+
+    </header>
+
+    <script>
+        //START Carousel Animation
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide-container");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 8000); // Change image every 2 seconds
+        }
+        //END Carousel Animation
+
+    </script>
+
+</body>
+
+</html>
