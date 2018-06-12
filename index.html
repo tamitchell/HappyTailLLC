@@ -10,161 +10,51 @@
     <title>Happy Tail VA LLC: Dog Walking and Boarding Company</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 
-        /*Navgation Bar Styling Begins here*/
-
-        nav {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            position: relative;
-            background-color: #1B110C;
-        }
-
-        .nav-item {
-            width: 100%;
-            padding: 2em;
-        }
-
-        .nav-item a {
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: .2em;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: lighter;
-            font-size: 2vw;
-            color: white;
-        }
-
-        .fakenav-item {
-            text-decoration: none;
-            padding: 20px 60px;
-            text-transform: uppercase;
-            letter-spacing: .2em;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: lighter;
-            font-size: 2vw;
-            color: #1B110C;
-        }
-
-        /*Logo styling which is drawn with SVG. Not entirely sure yet if this is supported by all browsers. Looking into it...*/
-
-        svg {
-            position: absolute;
-            width: 200px;
-            height: 150px;
-            display: flex;
-            top: 100%;
-            left: 52%;
-            margin: -50%, -50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.5;
-        }
-
-        path d {
-            flex: 1;
-            filter: blur(.01);
-        }
-
-        .logopic {
-            width: 120px;
-            position: absolute;
-            top: 50%;
-            left: 52%;
-            margin: -50%, -50%;
-            transform: translate(-50%, -50%);
-        }
-
-        /*Navigation Bar Styling Ends here*/
-
-        /*CAROUSEL START. Mostly Operated by Javascript*/
-
-        .carousel-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-        }
-
-        .slide-container {
-            display: none;
-        }
-
-
-        .caption {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -50%, -50%;
-            transform: translate(-50%, -50%);
-
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            font-size: 2vw;
-            color: white;
-        }
-
-        .caption h1 {
-            font-weight: 100;
-        }
-
-
-
-
-        /**/
-
-        /*Responsiveness START*/
-
-        /*Responsiveness END*/
-    </style>
 </head>
 
 <body>
     <header>
         <!--Navigation Bar Content START-->
         <nav>
-            <!--Main Logo CONTENT START-->
-            <div class="mainlogo">
-                <a href="index.html" alt="Happy Tail logo">
-                    <svg viewBox="-1 0 101 100">
-                        <path d="M0,0 L100,0 L100,60 L50,100 L0,60z" fill="white" /> Sorry, your browser does not support inline SVG.
-                        <img src="images/logo/logopic.png" class="logopic">
-                    </svg>
-                </a>
-            </div>
-            <!--END Main Logo CONTENT-->
 
             <!--Nav List items-->
             <div class="nav-item">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
             </div>
             <div class="nav-item">
-                <a href="#">Services</a>
+                <a href="services.html">Services</a>
             </div>
             <div class="nav-item">
-                <a href="#">Pricing</a>
+                <a href="pricing.html">Pricing</a>
             </div>
-            <div class="fakenav-item">
-                <a href="#"></a>
+            
+             <!--Main Logo CONTENT START-->
+            
+            <div class="nav-item">
+                    <span class="placeholder">
+                            <a href="contact.html">Send Message</a>
+                            </span>
+                        
+            
+                    <a href="index.html" alt="Happy Tail LLC logo">
+                        <img src="images/logo/bignavlogo.png" class="mainlogo">
+                    </a>
+                
+                <!--END Main Logo CONTENT-->
             </div>
             <div class="nav-item">
-                <a href="#">Blog</a>
+                <a href="blog.html">Blog</a>
             </div>
             <div class="nav-item">
-                <a href="#">About</a>
+                <a href="about.html">About</a>
             </div>
             <div class="nav-item">
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </div>
-        </nav>
 
-        <!--END Nav list items-->
+        </nav>
 
         <!--END Navigation Bar Content-->
 
@@ -173,14 +63,14 @@
         <div class="carousel-container">
 
             <!--First Slide container START-->
-            <div class="slide-container">
-                <video class="puppy-beach-video" width="100%" preload="auto" loop="" autoplay="" style="visibility:visible; width:100%;">
+            <div class="slide-container1">
+                <video autoplay muted class="puppy-beach-video" width="100%" preload="auto" loop=""  style="visibility:visible; width:100%;">
                     <source src="media/puppy_beach.mp4" type="video/mp4">
                     <source src="media/puppy_beach.webm" type="video/webm">
                 </video>
 
                 <!--First Slide caption-->
-                <div class="caption">
+                <div class="caption1">
                     <h1>
                         Let's Take a Walk
                     </h1>
@@ -194,15 +84,11 @@
 
             <!--Second Slide Containter START-->
 
-            <div class="slide-container">
-
-                <!--Second Slide Caption-->
-
-                <img src="images/photography/sad_doggy.jpeg" class="slide-img" alt="Dog looking tentively into the camera" style="width:100%">
-
+            <div class="slide-container2">
+                     <!--Second Slide Caption-->
                 <div class="caption">
 
-                    <h1>Why Choose Us</h1>
+                    <h2>Why Choose Us</h2>
 
 
                     <p> Our mission is to provide the best service for your four legged family member. We specialize in one-on-one
@@ -223,15 +109,12 @@
 
 
             <!--START Third Slide Container-->
-            <div class="slide-container">
-
-                    <img src="images/photography/paw_hand.jpeg" class="slide-img" alt="Dog paw and human hand curved to make a heart" style="width:100%">
-
+            <div class="slide-container3">
 
                 <!--START Caption Content container-->
                 <div class="caption">
 
-                    <h1>Come Find Us</h1>
+                    <h2>Come Find Us</h2>
 
                     <p>
                         Main location
@@ -279,14 +162,241 @@
 
     </header>
 
+    <!--START Mini Divider-->
+    <hr class="first-divider">
+     <!--END Mini divider-->
+
+     <!--START Mission Statement-->
+     <div class="mission-statement-container">
+         <img src="images/photography/wrinkly_puppy.jpeg" class="mission-img" alt="wringkly puppy looking to the left" onContextMenu="return false;" width="50%">
+         
+         <img src="images/logo/100percentguarenteed_BROWN.png" alt="100% Satisfaction Guaranteed logo" oncontextmenu="return false;" class="satisfaction-logo">
+         
+         <span class="mission-paragraph">
+         
+         <h1>What Makes Us Different</h1>
+         <p>Our mission is to provide the best service for your four legged family member. Happy Tail LLC is a dog walking company very different from the rest.<br>
+
+            <br>We specialize in one-on-one care to meet your dog’s needs and happiness. We know every dog is different, this is why Happy Tail LLC provides a unique services to our clients and their dogs.<br>
+            
+             
+            
+            <br>We are always vigilant of their safety and wellness we are aware of each dog’s needs</p>
+
+            <a href="about.html">
+            <button class="mission-button">More About Us</button>
+        </a>
+             </span>
+     </div>
+     <!--END Mission Statement-->
+
+<!--START Mini Divider-->
+<hr class="second-divider">
+<!--END Mini divider-->
+
+<!--START WHAT TO EXPECT-->
+<div class="what-expect-container">
+    <div class="center-container">
+    <span class="trust-container">
+        <img src="images/ICONS/trustworthiness.png" class="expectations-icon" onmenucontent="return false;">
+        <h1>Trustiworthiness</h1>
+        <p>
+            It’s like you’re right there through the entire adventure!<br>
+
+ 
+
+            <br> You will receive photos, text, and an update for every walk or visit
+        </p>
+    </span>
+
+    <span class="peace-container">
+        <img src="images/ICONS/peace_3.png" class="expectations-icon">
+        <h1>Peace of Mind</h1>
+        <p>
+            We believe experience equals quality care for your dog.<br>
+
+ 
+
+            <br>Our staff brings together knowledge and experience in animal behavior to fuel our passion and love for dogs.
+        </p>
+
+        <a href="services.html">
+            <button class="service-button">More On Our Services</button>
+        </a>
+
+    </span>
+
+    <span class="relief-container">
+        <img src="images/ICONS/relief.png" class="expectations-icon">
+        <h1>Relief</h1>
+        <p>
+            Book Services 24/7 Online or by phone<br>
+
+            <br>Back up walkers and sitters always available<br>
+
+            <br><strong>Pet Taxi!</strong> Free pick up and drop off for your pets*<br>
+
+            <br><emphasis>*only available for boarding services</emphasis><br>
+        </p>
+    </span>
+    </div>
+</div>
+<!--END WHAT TO EXPECT-->
+
+<!--START Mini Divider-->
+<hr class="third-divider">
+<!--END Mini divider-->
+
+<!--START Testimonials-->
+<div class="testimonials-container">
+    <span class="testimonial-banner">
+        <img src="images/Misc/testimonials_background.png" alt="Testimonials banner of a small dog's nose pointed to the camera">
+        <h1>Testimonials</h1>
+    </span>
+
+    <h3>See what others are saying</h3>>
+    <!--START First comment-->
+    <span class="comments">
+        <img src="images/Misc/brycepic.jpg" class="comment-img" alt="Smiling brown haired man next to pug">
+        <h4>Bryce</h4>
+        <p>"There is no better dog care service out there. My wife and I use their them at least twice a week!"
+        </p>
+    </span>
+
+        <!--END First comment-->
+
+     <!--START Second comment-->
+    <span class="comments">
+        <img src="images/Misc/simonepic.jpg" class="comment-img" alt="Happy blond woman with tongue next brown dog who also seem like they're smiling">
+        <h4>Simone</h4>
+        <p>"Happy Tails LLC trained Lily to walk in the leash. We are very pleased for the services that Happy Tail LLC provided to Lily"
+        </p>
+    </span>
+    <!--End second comment-->
+
+    <!--START third comment-->
+    <span class="comments">
+        <img src="images/Misc/chrispic.jpg" class="comment-img" alt="Man kissing irritated cat">
+        <h4>Chris</h4>
+        <p>"Fiorella is trustworthy, responsible, and best of all I know she she truly cares for the pets she looks after."
+        </p>
+    </span>
+    <!--End third comment-->
+
+
+     <!--Previous and Next buttons-->
+     <div class="comments-nav-buttons">
+            <a href="prev" onclick="plusSlides(-1)"></a>
+            <a href="next" onclick="plusSlides(1)"></a>
+        </div>
+
+        <!--END previous and Next buttons-->
+
+        <!--START Dots navigation counter-->
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <!--END Dots navigation counter-->
+
+    <a href="blog.html">
+        <button class="more-reviews">More Reviews</button>
+    </a>
+
+   <p> &#42photos changed for privacy</p> 
+</div>
+<!--END Testimonials-->
+
+<div class="site-divider">Border goes here</div>
+
+
+<!--START Questions and Contact section-->
+<div class="questions-container">
+    <h1>Questions</h1>
+    <h2>If you have any questions or concerns, or for reservations and further information on caring for your dog, please contact:</h2>
+    <h3>Fiorella Gambini</h3>
+
+    <!--START FORM Accordion-->
+    <!--END Form Accordion-->
+
+    <!--START Contact Icons-->
+        <span>
+            <img src="images/ICONS/location.png" alt="location icon">
+            <p>
+                <strong>Location</strong><br>
+                <br>3580 Ellery Circle<br>
+                    Falls Church Virginia 22041
+            </p>
+        </span>
+
+        <span>
+                <img src="images/ICONS/phone.png" alt="phone icon">
+                <p>
+                    <strong>Telephone</strong><br>
+                    <br>Fiorella Gambini<br>
+                    703-303-7099
+                </p>
+            </span>
+
+            <span>
+                    <img src="images/ICONS/fax_icon.png" alt="phone icon">
+                    <p>
+                        <strong>Fax</strong><br>
+                        <br>703-890-2653
+                    </p>
+                </span>
+
+                <span>
+                        <img src="images/ICONS/Gmail.png" alt="email icon">
+                        <p>
+                            <strong>Email</strong><br>
+                            <br>happytail.llc@gmail.com
+                            <br>
+                        </p>
+                    </span>
+
+                    <img src="images/photography/dog_looking_forward.jpeg" class="question-img" alt="chocolate labrador looking forward">
+    <!--END Contact Icons-->
+
+</div>
+
+<!--END Questions and Contact section-->
+
+<!--START Page Footer-->
+
+<footer>
+    <span class="sitemap">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </span>
+    
+    <span class="socialmedia">
+    </span>
+    </footer>
+
+<!--END Page Footer-->
+
     <script>
+        //START Accordion Navigation Bar
+
+
+
+        //END Accordion Navigation Bar
+
         //START Carousel Animation
         var slideIndex = 0;
         showSlides();
 
         function showSlides() {
             var i;
-            var slides = document.getElementsByClassName("slide-container");
+            var slides = document.querySelectorAll(".slide-container1, .slide-container2, .slide-container3");
             var dots = document.getElementsByClassName("dot");
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
@@ -298,7 +408,7 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 8000); // Change image every 2 seconds
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
         //END Carousel Animation
 
