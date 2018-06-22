@@ -1,5 +1,6 @@
+'use strict';
+
 var slideIndex = 0;    //START Carousel Animation
-        showSlides();
 
         function showSlides() {
             var i;
@@ -17,6 +18,8 @@ var slideIndex = 0;    //START Carousel Animation
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
+
+showSlides();
         //END Carousel Animation
         
         //START Accordion buttons
