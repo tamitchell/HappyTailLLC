@@ -241,41 +241,68 @@ a:hover {
 
 /* line 277, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container.accordions {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center; }
-  /* line 283, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-  .container.accordions .btn {
-    text-align: center;
-    width: 80em;
-    height: auto;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 3px;
-    font-weight: lighter; }
-  /* line 292, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-  .container.accordions .boarding {
-    background-image: url(/images/photography/dog_boarding.jpeg);
-    background-position: center;
-    background-size: cover; }
-  /* line 298, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-  .container.accordions .walking {
-    background-image: url(/images/photography/dog_walking.jpeg);
-    background-position: center;
-    background-size: cover; }
-  /* line 303, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-  .container.accordions .sitting {
-    background-image: url(/images/photography/sitting.jpeg);
-    background-position: center;
-    background-size: cover; }
-  /* line 308, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-  .container.accordions .specialty {
-    background-image: url(/images/photography/dog_specialty.jpeg);
-    background-position: center;
-    background-size: cover; }
+  margin: 3em 2em; }
+  /* line 280, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.accordions .accordion-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+    /* line 285, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    .container.accordions .accordion-buttons .btn {
+      margin: 0 0.3em 0.3em 0;
+      font-size: 3em;
+      text-align: center;
+      padding: 1em;
+      width: 50em;
+      max-width: 500px;
+      height: auto;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 19px;
+      font-weight: lighter; }
+    /* line 298, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    .container.accordions .accordion-buttons .boarding {
+      background-image: url(/images/photography/dog_boarding.jpeg);
+      background-position: center;
+      background-size: cover; }
+    /* line 304, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    .container.accordions .accordion-buttons .walking {
+      background-image: url(/images/photography/dog_walking.jpeg);
+      background-position: center;
+      background-size: cover; }
+    /* line 309, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    .container.accordions .accordion-buttons .sitting {
+      background-image: url(/images/photography/sitting.jpeg);
+      background-position: center;
+      background-size: cover; }
+    /* line 314, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    .container.accordions .accordion-buttons .specialty {
+      background-image: url(/images/photography/dog_specialty.jpeg);
+      background-position: center;
+      background-size: cover; }
+    /* line 319, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    .container.accordions .accordion-buttons .accord-text {
+      padding: 0 1em 1em 1em;
+      max-width: 500px; }
 
-/* line 315, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-.questions-img {
+/* line 327, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+.question-img {
   width: 50%; }
+
+/* line 331, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+.container.pricing-title {
+  text-align: center; }
+  /* line 333, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.pricing-title h1 {
+    margin-top: 1em; }
+  /* line 336, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.pricing-title h4 {
+    font-size: 1em;
+    font-style: italic;
+    color: orange; }
+  /* line 341, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.pricing-title .pricing-img-banner {
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
