@@ -221,4 +221,61 @@ a:hover {
       border: 2px solid #1B110C;
       color: #1B110C; }
 
+/* line 260, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+.services-header img {
+  width: 100%; }
+
+/* line 263, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+.services-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #DB9363;
+  font: 3em "Montserrat"; }
+
+/* line 270, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+.services-header h3 {
+  padding: 1em 0 1em 0;
+  text-align: center;
+  font-size: 1em; }
+
+/* line 277, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+.container.accordions {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center; }
+  /* line 283, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.accordions .btn {
+    text-align: center;
+    width: 80em;
+    height: auto;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: lighter; }
+  /* line 292, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.accordions .boarding {
+    background-image: url(/images/photography/dog_boarding.jpeg);
+    background-position: center;
+    background-size: cover; }
+  /* line 298, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.accordions .walking {
+    background-image: url(/images/photography/dog_walking.jpeg);
+    background-position: center;
+    background-size: cover; }
+  /* line 303, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.accordions .sitting {
+    background-image: url(/images/photography/sitting.jpeg);
+    background-position: center;
+    background-size: cover; }
+  /* line 308, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.accordions .specialty {
+    background-image: url(/images/photography/dog_specialty.jpeg);
+    background-position: center;
+    background-size: cover; }
+
+/* line 315, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+.questions-img {
+  width: 50%; }
+
 /*# sourceMappingURL=main.css.map */

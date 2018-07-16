@@ -9,7 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Happy Tail VA LLC: Dog Walking and Boarding Company - Services</title>
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -17,237 +20,263 @@
 </head>
 
 <body>
-<header>
-      <!--Navigation Bar Content START-->
-        <nav>
+    <header>
+        <!--Navigation Bar Content START-->
+        <nav class="navbar navbar-expand-lg transparent">
+
+            <!---Centered Logo Brand--->
+
+
+            <!--Toggle Button for smaller screens/devices-->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
 
             <!--Nav List items-->
-            <div class="nav-item">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="nav-item">
-                <a href="services.html">Services</a>
-            </div>
-            <div class="nav-item">
-                <a href="pricing.html">Pricing</a>
-            </div>
-            
-             <!--Main Logo CONTENT START-->
-            
-            <div class="nav-item">
-                    <span class="placeholder">
-                            <a href="contact.html">Send Message</a>
-                            </span>
-                        
-            
-                    <a href="index.html">
-                        <img src="images/logo/bignavlogo.png" 
-                             alt="Happy Tail Logo LLC" class="mainlogo">
-                    </a>
-                
-                <!--END Main Logo CONTENT-->
-            </div>
-            <div class="nav-item">
-                <a href="blog.html">Blog</a>
-            </div>
-            <div class="nav-item">
-                <a href="about.html">About</a>
-            </div>
-            <div class="nav-item">
-                <a href="contact.html">Contact</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item text active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(currently)</span></a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item navbar-brand">
+                        <a class="nav-link" href="index.html"><img src="images/logo/bignavlogo.png"alt="Happy Tail LLC logo"></a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
 
         </nav>
-    <!--END Nav Bar Content-->
-    
-    </header>
-    
-    <div id="container">
-    
-    <div class="services-top-container">
-        <img src="images/photography/services_banner.jpeg" class="services-banner-img" alt="Puppies and kittens hanging over title" oncontextmenu="return false;">
-        
-        <h1>Our Services</h1>
-        
-        <h3>Our Dog Care Professionals are happy to provide the following services.
-</h3>  
-    </div>   
 
-    
+        <!--END Nav Bar Content-->
+
+    </header>
+
+
+    <div class="container services-header">
+        <img src="images/photography/services_banner.jpeg" class="services-banner-img" alt="Puppies and kittens hanging over title" oncontextmenu="return false;">
+
+        <h1>Our Services</h1>
+
+        <h3>Our Dog Care Professionals are happy to provide the following services:
+        </h3>
+    </div>
+
+
     <hr class="first-divider">
-        
-        <!--START Services Container with Accordions below-->
-    
-    <div class="services-accordion-container">
-    
-        <button class="accordion services boarding">
+
+    <!--START Services Container with Accordions below-->
+
+    <div class="container accordions">
+
+        <button class="btn accordion services boarding" type="button" data-toggle="collapse" data-target="#boardingAcc" aria-expanded="true" aria-controls="boardingAcc">
             Boarding
             </button>
-            <div class="accord-text">
+        <div class="accord-text collapse" id="boardingAcc" aria-labelledby="boardingAccordion">
             <p>Our Mission is to provide your dog with unconditional love they so urgently need when you are away. Your dog will feel loved, happy,and sage in a home enviroment with ceramic flooring.</p>
-            
-                <p>Other features include:</p>
-            
+
+            <p>Other features include:</p>
+
             <p>Walls instead of chain link, climate control ensure clean air for health, comforting music 24/7, fleece blankets, kong treats, playground toys, cots and balls for stimulation and fun.</p>
-            </div>
-        
-        
-        
-        <button class="accordion services walking">
+        </div>
+
+
+
+        <button class="btn accordion services walking" type="button" data-toggle="collapse" data-target="#walkingAcc" aria-expanded="true" aria-controls="walkingAcc">
             Walking
         </button>
-            <div class="accord-text">
+        <div class="accord-text collapse" id="walkingAcc" aria-labelledby="walkingAccordion">
             <p>
                 <em>*We don't walk more than 3 dogs at a time.</em></p>
-                
-                <p>Every dog needs at least 30 minutes of exercise each day. Let us walk your four legged friend and let them enjoy the outdoors!</p>
-                
-                <p>Our professional walkers teach your dog how to walk on a leash. Since every dog has different personalities and behaviors, we treat each dog different based on those needs.</p>
-                
-                <p><em>First walk on us!!</em>
+
+            <p>Every dog needs at least 30 minutes of exercise each day. Let us walk your four legged friend and let them enjoy the outdoors!</p>
+
+            <p>Our professional walkers teach your dog how to walk on a leash. Since every dog has different personalities and behaviors, we treat each dog different based on those needs.</p>
+
+            <p><em>First walk on us!!</em>
                 <br>
                 <em>*Applies to new customers only</em>
-                </p>
-            </div>
-        
-        <button class="accordion services sitting">
-            Sitting 
-        </button>
-            <div class="accord-text">
-                <p>
-                    <em>(Includes dogs and cats only)</em></p>
-                
-                
-                <p>When you are away let us visit your cat or dog to make sure they have all the things they need! Food, water, and all the unconditional love to help them feel safe and happy unil your return.
-                </p>
-            </div>
-        
-        <button class="accordion services specialty">
-            Specialty
-        </button>
-            <div class="accord-text">
-                <p>
-                    Happy Tail LLC understands the need for pet health and safety, that is why we offer such services such as performing <strong> at home shots, injections, and/or pill administrations</strong> per your Veterinarian's request.</p>
-                    
-                    <p>Please note that while we are able to perform these administrations, Happy Tail LLC is not veterinary office. <strong>
-                    Please ensure that your lovely pet has been kept up to date on all of their shots, vaccines, and yearly checkups before booking!
-                    </strong>
-                </p>
-            </div>
-        
-        <p>This and the above services always come with extra special care. Please note: We want your pet to feel safe with us, so we like to have an introduction interview with you as the owner and your dog before actually caring for him or her. Please call us soon!</p>
-        </div>
-        
-        <!--END Services Container-->
-    
-    <hr class="second-divider">
-        
-        <!--START Questions/Contact Us Container-->
-    
-    <div class="questions-container">
-    <h1>Contact Us</h1>
-    <h2>If you have any questions or concerns, or for reservations and further information on caring for your dog, please contact:</h2>
-    <h3>Fiorella Gambini</h3>
-
-    
-    
-
-    
-        <div class="contact-info">
-            <img src="./images/ICONS/location.png" class="contacticons" alt="location icon" oncontextmenu="return false;">
-            <p>
-                <strong>Location</strong><br>
-                <br>3580 Ellery Circle<br>
-                    Falls Church Virginia 22041
             </p>
         </div>
 
-        <div class="contact-info">
-                <img src="./images/ICONS/phone.png" class="contacticons" alt="phone icon" oncontextmenu="return false;">
-                <p>
-                    <strong>Telephone</strong><br>
-                    <br>Fiorella Gambini<br>
-                    703-303-7099
-                </p>
+        <button class="btn accordion services sitting" data-toggle="collapse" data-target="#sittingAcc" aria-expanded="true" aria-controls="sittingAcc">
+            Sitting 
+        </button>
+        <div class="accord-text collapse" id="sittingAcc" aria-labelledby="sittingAccordion">
+            <p>
+                <em>(Includes dogs and cats only)</em></p>
+
+
+            <p>When you are away let us visit your cat or dog to make sure they have all the things they need! Food, water, and all the unconditional love to help them feel safe and happy unil your return.
+            </p>
+        </div>
+
+        <button class="btn accordion services specialty" data-toggle="collapse" data-target="#specialtyAcc" aria-expanded="true" aria-controls="specialtyAcc">
+            Specialty
+        </button>
+        <div class="accord-text collapse" id="#specialtyAcc" aria-labelledby="specialtyAccordion">
+            <p>
+                Happy Tail LLC understands the need for pet health and safety, that is why we offer such services such as performing <strong> at home shots, injections, and/or pill administrations</strong> per your Veterinarian's request.</p>
+
+            <p>Please note that while we are able to perform these administrations, Happy Tail LLC is not veterinary office. <strong>
+                    Please ensure that your lovely pet has been kept up to date on all of their shots, vaccines, and yearly checkups before booking!
+                    </strong>
+            </p>
+        </div>
+        <p>This and the above services always come with extra special care. Please note: We want your pet to feel safe with us, so we like to have an introduction interview with you as the owner and your dog before actually caring for him or her. Please call us soon!</p>
+    </div>
+
+
+
+    <!--END Services Container-->
+
+    <hr class="second-divider">
+
+    <!--START Questions/Contact Us Container-->
+
+    <div class="container questions">
+        <div class="questions-call">
+            <h1 class="display-4">Questions?</h1>
+            <p class="lead">If you have any questions or concerns, or for reservations and further information on caring for your dog, please contact:</p>
+            <h3>Fiorella Gambini</h3>
+        </div>
+
+        <div class="flex-wrapper-cards">
+            <div class="card contact">
+                <img src="images/ICONS/location.png" class="card-img-left contact" alt="location icon">
+                <div class="card-body">
+                    <h6 class="card-title">Location</h6>
+                    <p>
+                        3580 Ellery Circle<br> Falls Church Virginia 22041
+                    </p>
+                </div>
             </div>
 
-            <div class="contact-info">
-                    <img src="./images/ICONS/fax_icon.png" class="contacticons" alt="phone icon" oncontextmenu="return false;">
+            <div class="card contact">
+                <img src="images/ICONS/phone.png" class="card-img-left contact" alt="phone icon">
+                <div class="card-body">
+                    <h6 class="card-title">Telephone</h6>
                     <p>
-                        <strong>Fax</strong><br>
-                        <br>703-890-2653
+                        Fiorella Gambini<br> 703-303-7099
                     </p>
                 </div>
 
-                <div class="contact-info">
-                    
-                        <img src="./images/ICONS/Gmail.png" class="contacticons" alt="email icon" oncontextmenu="return false;">
-                        <p>
-                            <strong>Email</strong><br>
-                            <br>happytail.llc@gmail.com
-                            <br>
-                        </p>
-                    </div>
+            </div>
 
-     
-        <!--Send a message form-->
-       <div class="accordion-container">
-    <button class="accordion contact">
+            <div class="card contact">
+                <img src="images/ICONS/fax_icon.png" class="card-img-left contact" alt="phone icon">
+                <div class="card-body">
+                    <h6 class="card-title">Fax</h6>
+                    <p>
+                        703-890-2653
+                    </p>
+                </div>
+            </div>
+
+            <div class="card contact">
+
+                <img src="images/ICONS/Gmail.png" class="card-img-left contact" alt="email icon">
+                <div class="card-body">
+                    <h6 class="card-title">Email</h6>
+                    <p>happytail.llc@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--Send a message form-->
+    <div class="accordion-container">
+        <button type="button" data-toggle="collapse" data-target="#sendMessage" aria-expanded="false" aria-controls="sendMessage" class="btn accordion contact ">
         Send a Message        
     </button>
-    
-    <div class="accordion-content">
+
+        <div class="collapse accordion-content" id="sendMessage">
             <form action="/action_page.php" method="post">
-            Name <br>
-            <input type="text" name="customername" placeholder="First Name, Last Name">
-            <br>
-            
-            Email<br>
-            <input type="email" name="email" placeholder="Email"> <br>
-            
-            Phone
-            <br>
-            <input type="number" name="phone_number" placeholder="(555) 555 5555">
-            <br>
-            
-            Message
-            <br>
-            <input type="text" name="message" placeholder="Type your message here. If making a service request, don't forget to state the breed of dog you have!">
-            <br>
-            <input type="submit" name="submit" >           
+                <div class="form-group">
+
+                    <label for="formInputName" class="sr-only">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Full Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail" class="sr-only">Email</label>
+                    <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPhoneNumber">Phone</label>
+                    <input type="text" placeholder="(555) 555 5555">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </div>
+
             </form>
-    </div>
-    </div>
-        <!--END Questions/Contact Us container-->
-        
-        <img src="./images/photography/dog_contact.jpeg" alt="Jack Russell holding phone wanting you to give a call!" class="question-img"/>
-    
-        <!--Div for containerID below-->
-        
         </div>
     </div>
-        
-    <footer>
-    <div class="sitemap">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="container">
+        <img src="./images/photography/dog_contact.jpeg" alt="Jack Russell holding phone wanting you to give a call!" class="question-img">
+
     </div>
-    
-    <p>
-        Web Developed and Designed by Tasha Mitchell, 2018. All Rights Reserved.
-    </p>
-    
-    <span class="socialmedia">
+
+    <!--END Questions/Contact Us container-->
+    <!--
+-->
+
+    <!--Div for containerID below-->
+
+
+    <footer>
+        <div class="sitemap">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <p>
+            Web Developed and Designed by Tasha Mitchell, 2018. All Rights Reserved.
+        </p>
+
+        <span class="socialmedia">
         
     </span>
     </footer>
-    
-<script src="./main.js"></script>    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
 </body>
+
 </html>

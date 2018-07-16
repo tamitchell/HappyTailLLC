@@ -256,4 +256,64 @@ a:hover {
     }
 }
 
+.services-header {
+    img {
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 0.3em;
+        border-bottom: 2px solid #DB9363;
+        font: $header;
+    }
+    h3 {
+        padding: 1em 0 1em 0;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+.container.accordions {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+
+
+    .btn {
+        text-align: center;
+        width: 80em;
+        height: auto;
+        text-transform: uppercase;
+        color: $main-white;
+        letter-spacing: 3px;
+        font-weight: lighter;
+    }
+    .boarding {
+        background-image: url(/images/photography/dog_boarding.jpeg);
+        background-position: center;
+        background-size: cover;
+
+    }
+    .walking {
+        background-image: url(/images/photography/dog_walking.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    .sitting {
+        background-image: url(/images/photography/sitting.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    .specialty {
+        background-image: url(/images/photography/dog_specialty.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.questions-img {
+    width: 50%;
+}
+
 footer {}
