@@ -1,0 +1,259 @@
+//fix nav so that icon and toggle shows on breakpoint
+//fix size of banner slider so that it's max-height is only 30%
+//mission statement image should always be on bottom
+//comment section disclosure statement should be left-aligned
+//what to expect section should have header"what to expect"
+//what to expect container should be diff colors(?) more appealing
+//contact card imgs should be beside info not on top
+//format accordion button so that it is centered
+//style form so that it is 80% width == to button width with a faint border
+//labrador image should be bigger
+//format footer
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+/*Font-Stack*/
+
+$header: 3em 'Montserrat';
+$sub-header: 2em 'Montserrat';
+$regular-text: 2em 'Open Sans';
+
+/*Images and Sizing*/
+
+$icon: 128px;
+$comment-pic: 264px;
+
+/*Colors*/
+
+$muddy-brown: #1B110C;
+$main-white: #fff;
+$border-ver-1:2px solid white;
+$border-ver-2:2px solid #1B110C;
+
+
+/*NAVBAR STYLE*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: $muddy-brown;
+    color: $main-white; //    height: 50px;
+    min-height: 50px;
+    .navbar-brand img {
+        position: absolute;
+        top: 0%;
+        left: 43%;
+        transform: translate(-50, -50);
+        height: 128px;
+        width: 128px;
+        z-index: 1;
+
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        height: 100%;
+        padding-right: 4%;
+
+    }
+    a {
+        font: $sub-header;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: white;
+    }
+}
+
+.banner-slide {
+    padding: 0;
+    height: 30%;
+    max-height: 10em;
+    .carousel-caption {
+        top: 40%;
+        transform: translateY(-40%);
+    }
+    .btn.banner {
+        margin-top: 3em;
+        background-color: transparent;
+        color: $main-white;
+        border: $border-ver-1;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $muddy-brown;
+            border: $border-ver-2;
+        }
+    }
+}
+
+
+
+.first-divider {
+    margin: 0;
+    height: 20px;
+    background-color: #DB9363;
+    border: none;
+}
+
+.container.mission {
+    position: relative;
+    padding: 5em;
+    .mission-statement {
+        width: 50%;
+        max-width: 50em;
+    }
+    img {
+        position: absolute;
+    }
+    .satisfaction-logo {
+        width: 64px;
+        right: 9%;
+    }
+    .mission-img {
+        top: 9%;
+        right: 0.5%;
+        z-index: -1;
+    }
+    .mission-button {
+        margin-top: 3em;
+        background-color: transparent;
+        color: $main-white;
+        border: $border-ver-2;
+        text-transform: uppercase;
+        a {
+            color: $muddy-brown;
+            &:hover {
+                color: $main-white;
+            }
+        }
+        &:hover {
+            background-color: $muddy-brown;
+            border: $border-ver-1;
+        }
+    }
+}
+
+.second-divider {
+    margin: 0;
+    height: 20px;
+    background-color: #DB9363;
+}
+
+.container-fluid.expectations {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    img {
+        margin: 0 auto;
+        width: 128px;
+    }
+
+    .card {
+        padding-top: 1em;
+        text-align: center;
+        width: 20em;
+        height: 30em;
+        border-radius: 0;
+    }
+
+}
+
+.third-divider {
+    margin: 0;
+    height: 20px;
+    background-color: #DB9363;
+}
+
+.container.testimonials {
+    text-align: center;
+    h1 {
+        margin-top: 1em;
+        padding: 1em;
+        background-image: url(/images/Misc/testimonials_background.png);
+        background-size: cover;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $main-white;
+    }
+    h3 {
+        font-size: 1em;
+        color: #303030;
+        font-style: italic;
+        margin-bottom: 2em;
+    }
+    .comment {
+        margin: 0 auto;
+        width: 264px;
+        height: 264px;
+    }
+    .btn.reviews {
+        margin-top: 3em;
+        background-color: transparent;
+        color: $main-white;
+        border: $border-ver-2;
+        text-transform: uppercase;
+        color: $muddy-brown;
+        &:hover {
+            background-color: $muddy-brown;
+            border: $border-ver-1;
+            color: white;
+        }
+    }
+}
+
+.fourth-divider {
+    margin: 0;
+    height: 20px;
+    background-color: #DB9363;
+}
+
+.container.questions {
+    margin-top: 2em;
+    .questions-call {
+        color: $muddy-brown;
+        text-align: center;
+        background-color: none;
+        h1 {
+            text-transform: uppercase;
+        }
+    }
+    img {
+        margin: 0 auto;
+        height: 64px;
+        width: auto;
+    }
+    .flex-wrapper-cards {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em;
+        .card {
+            width: 60%;
+            margin-right: 2em;
+        }
+    }
+    .accordion.contact {
+        width: 80%;
+        margin-top: 3em;
+        padding: 0.5em;
+        background-color: $muddy-brown;
+        color: $main-white;
+        border: $border-ver-2;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $main-white;
+            border: $border-ver-2;
+            color: $muddy-brown;
+        }
+    }
+}
+
+footer {}
