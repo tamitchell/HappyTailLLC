@@ -292,16 +292,18 @@ a:hover {
 
 /* line 331, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container.pricing-title {
-  text-align: center; }
-  /* line 333, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter; }
+  /* line 335, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.pricing-title h1 {
     margin-top: 1em; }
-  /* line 336, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 339, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.pricing-title h4 {
     font-size: 1em;
     font-style: italic;
     color: orange; }
-  /* line 341, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 344, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.pricing-title .pricing-img-banner {
     width: 100%; }
 
