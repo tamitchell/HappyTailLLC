@@ -3,21 +3,26 @@
 /*Images and Sizing*/
 /*Colors*/
 /*NAVBAR STYLE*/
-/* line 35, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 45, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 * {
   margin: 0;
   padding: 0; }
 
-/* line 40, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 50, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+html,
+body {
+  height: 100%; }
+
+/* line 55, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 a:hover {
   text-decoration: none; }
 
-/* line 44, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 59, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .navbar {
   background-color: #1B110C;
   color: #fff;
   min-height: 50px; }
-  /* line 48, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 63, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .navbar .navbar-brand img {
     position: absolute;
     top: 0%;
@@ -26,16 +31,16 @@ a:hover {
     height: 128px;
     width: 128px;
     z-index: 1; }
-  /* line 58, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 73, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .navbar ul {
     width: 100%;
     display: flex;
     justify-content: center; }
-  /* line 63, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 78, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .navbar li {
     height: 100%;
     padding-right: 4%; }
-  /* line 68, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 83, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .navbar a {
     font: 2em "Montserrat";
     font-size: 1em;
@@ -43,88 +48,89 @@ a:hover {
     letter-spacing: 0.3em;
     color: white; }
 
-/* line 77, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 92, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .banner-slide {
   padding: 0;
   height: 30%;
   max-height: 10em; }
-  /* line 81, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 96, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .banner-slide .carousel-caption {
     top: 40%;
     transform: translateY(-40%); }
-  /* line 85, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 100, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .banner-slide .btn.banner {
     margin-top: 3em;
     background-color: transparent;
     color: #fff;
     border: 2px solid white;
     text-transform: uppercase; }
-    /* line 91, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 106, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .banner-slide .btn.banner:hover {
       background-color: #1B110C;
       border: 2px solid #1B110C; }
 
-/* line 100, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 115, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .first-divider {
   margin: 0;
   height: 20px;
   background-color: #DB9363;
   border: none; }
 
-/* line 107, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 122, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container.mission {
   position: relative;
-  padding: 5em; }
-  /* line 110, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  padding: 5em 0; }
+  /* line 125, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.mission .mission-statement {
     width: 50%;
     max-width: 50em; }
-  /* line 114, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 129, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.mission img {
     position: absolute; }
-  /* line 117, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 132, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.mission .satisfaction-logo {
     width: 64px;
     right: 9%; }
-  /* line 121, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 136, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.mission .mission-img {
-    top: 9%;
+    top: 12%;
     right: 0.5%;
-    z-index: -1; }
-  /* line 126, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    z-index: -1;
+    width: 60%; }
+  /* line 142, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.mission .mission-button {
     margin-top: 3em;
     background-color: transparent;
     color: #fff;
     border: 2px solid #1B110C;
     text-transform: uppercase; }
-    /* line 132, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 148, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.mission .mission-button a {
       color: #1B110C; }
-      /* line 134, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+      /* line 150, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
       .container.mission .mission-button a:hover {
         color: #fff; }
-    /* line 138, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 154, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.mission .mission-button:hover {
       background-color: #1B110C;
       border: 2px solid white; }
 
-/* line 145, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 161, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .second-divider {
   margin: 0;
   height: 20px;
   background-color: #DB9363; }
 
-/* line 151, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 167, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container-fluid.expectations {
   display: flex;
   justify-content: center;
   padding: 0; }
-  /* line 155, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 171, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container-fluid.expectations img {
     margin: 0 auto;
     width: 128px; }
-  /* line 160, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 176, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container-fluid.expectations .card {
     padding-top: 1em;
     text-align: center;
@@ -132,16 +138,16 @@ a:hover {
     height: 30em;
     border-radius: 0; }
 
-/* line 170, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 186, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .third-divider {
   margin: 0;
   height: 20px;
   background-color: #DB9363; }
 
-/* line 176, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 192, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container.testimonials {
   text-align: center; }
-  /* line 178, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 194, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.testimonials h1 {
     margin-top: 1em;
     padding: 1em;
@@ -150,18 +156,18 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #fff; }
-  /* line 187, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 203, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.testimonials h3 {
     font-size: 1em;
     color: #303030;
     font-style: italic;
     margin-bottom: 2em; }
-  /* line 193, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 209, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.testimonials .comment {
-    margin: 0 auto;
+    margin: 0.3em auto 0 auto;
     width: 264px;
     height: 264px; }
-  /* line 198, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 214, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.testimonials .btn.reviews {
     margin-top: 3em;
     background-color: transparent;
@@ -169,63 +175,92 @@ a:hover {
     border: 2px solid #1B110C;
     text-transform: uppercase;
     color: #1B110C; }
-    /* line 205, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 221, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.testimonials .btn.reviews:hover {
       background-color: #1B110C;
       border: 2px solid white;
       color: white; }
 
-/* line 213, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 229, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .fourth-divider {
   margin: 0;
   height: 20px;
   background-color: #DB9363; }
 
-/* line 219, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 235, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container.questions {
   margin-top: 2em; }
-  /* line 221, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 237, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.questions .questions-call {
     color: #1B110C;
     text-align: center;
     background-color: none; }
-    /* line 225, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 241, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.questions .questions-call h1 {
       text-transform: uppercase; }
-  /* line 229, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-  .container.questions img {
-    margin: 0 auto;
-    height: 64px;
-    width: auto; }
-  /* line 234, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 246, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.questions .flex-wrapper-cards {
-    display: flex;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
+    width: 100%;
     margin-bottom: 5em; }
-    /* line 238, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 250, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.questions .flex-wrapper-cards .card {
-      width: 60%;
-      margin-right: 2em; }
-  /* line 243, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-  .container.questions .accordion.contact {
-    width: 80%;
-    margin-top: 3em;
-    padding: 0.5em;
-    background-color: #1B110C;
-    color: #fff;
-    border: 2px solid #1B110C;
-    text-transform: uppercase; }
-    /* line 251, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
-    .container.questions .accordion.contact:hover {
-      background-color: #fff;
+      display: -webkit-inline-flex;
+      display: inline-flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-content: center;
+      width: 40%;
+      height: 135px;
+      max-width: 300px;
+      margin: 0 1em 1em 0; }
+      /* line 256, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+      .container.questions .flex-wrapper-cards .card .card-body {
+        width: 60%;
+        height: auto;
+        font-size: 12px; }
+      /* line 261, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+      .container.questions .flex-wrapper-cards .card img {
+        padding: 0.3em;
+        height: 64px;
+        width: 64px; }
+  /* line 269, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.questions .accordion-container {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%; }
+    /* line 272, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    .container.questions .accordion-container .accordion.contact {
+      width: 80%;
+      margin: 0.3em;
+      padding: 0.5em;
+      background-color: #1B110C;
+      color: #fff;
       border: 2px solid #1B110C;
-      color: #1B110C; }
+      text-transform: uppercase; }
+      /* line 280, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+      .container.questions .accordion-container .accordion.contact:hover {
+        background-color: #fff;
+        border: 2px solid #1B110C;
+        color: #1B110C; }
+  /* line 287, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  .container.questions .accordion-content {
+    width: 80%;
+    padding: 1em;
+    background-color: beige; }
 
-/* line 260, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 296, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .services-header img {
   width: 100%; }
 
-/* line 263, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 299, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .services-header h1 {
   text-align: center;
   text-transform: uppercase;
@@ -233,22 +268,22 @@ a:hover {
   border-bottom: 2px solid #DB9363;
   font: 3em "Montserrat"; }
 
-/* line 270, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 306, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .services-header h3 {
   padding: 1em 0 1em 0;
   text-align: center;
   font-size: 1em; }
 
-/* line 277, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 313, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container.accordions {
   margin: 3em 2em; }
-  /* line 280, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 316, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.accordions .accordion-buttons {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center; }
-    /* line 285, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 321, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.accordions .accordion-buttons .btn {
       margin: 0 0.3em 0.3em 0;
       font-size: 3em;
@@ -261,50 +296,73 @@ a:hover {
       color: #fff;
       letter-spacing: 19px;
       font-weight: lighter; }
-    /* line 298, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 334, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.accordions .accordion-buttons .boarding {
       background-image: url(/images/photography/dog_boarding.jpeg);
       background-position: center;
       background-size: cover; }
-    /* line 304, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 340, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.accordions .accordion-buttons .walking {
       background-image: url(/images/photography/dog_walking.jpeg);
       background-position: center;
       background-size: cover; }
-    /* line 309, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 345, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.accordions .accordion-buttons .sitting {
       background-image: url(/images/photography/sitting.jpeg);
       background-position: center;
       background-size: cover; }
-    /* line 314, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 350, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.accordions .accordion-buttons .specialty {
       background-image: url(/images/photography/dog_specialty.jpeg);
       background-position: center;
       background-size: cover; }
-    /* line 319, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    /* line 355, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
     .container.accordions .accordion-buttons .accord-text {
       padding: 0 1em 1em 1em;
       max-width: 500px; }
 
-/* line 327, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 363, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .question-img {
   width: 50%; }
 
-/* line 331, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+/* line 367, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
 .container.pricing-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: lighter; }
-  /* line 335, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 371, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.pricing-title h1 {
     margin-top: 1em; }
-  /* line 339, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 374, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.pricing-title h4 {
     font-size: 1em;
     font-style: italic;
     color: orange; }
-  /* line 344, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  /* line 379, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .container.pricing-title .pricing-img-banner {
     width: 100%; }
+
+/* line 385, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #1B110C;
+  color: #fff; }
+  /* line 392, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+  footer ul {
+    list-style-type: none;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 1em; }
+    /* line 397, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
+    footer ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 1em; }
 
 /*# sourceMappingURL=main.css.map */

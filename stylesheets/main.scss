@@ -11,6 +11,16 @@
 //format footer
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
+@mixin flexbox {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin brownbutton {}
+
 /*Font-Stack*/
 
 $header: 3em 'Montserrat';
@@ -35,6 +45,11 @@ $border-ver-2:2px solid #1B110C;
 * {
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 a:hover {
@@ -106,7 +121,7 @@ a:hover {
 
 .container.mission {
     position: relative;
-    padding: 5em;
+    padding: 5em 0;
     .mission-statement {
         width: 50%;
         max-width: 50em;
@@ -119,9 +134,10 @@ a:hover {
         right: 9%;
     }
     .mission-img {
-        top: 9%;
+        top: 12%;
         right: 0.5%;
         z-index: -1;
+        width: 60%;
     }
     .mission-button {
         margin-top: 3em;
@@ -191,7 +207,7 @@ a:hover {
         margin-bottom: 2em;
     }
     .comment {
-        margin: 0 auto;
+        margin: 0.3em auto 0 auto;
         width: 264px;
         height: 264px;
     }
@@ -226,35 +242,55 @@ a:hover {
             text-transform: uppercase;
         }
     }
-    img {
-        margin: 0 auto;
-        height: 64px;
-        width: auto;
-    }
+
     .flex-wrapper-cards {
-        display: flex;
-        justify-content: center;
+        @include flexbox;
+        width: 100%;
         margin-bottom: 5em;
         .card {
-            width: 60%;
-            margin-right: 2em;
+            @include flexbox;
+            width: 40%;
+            height: 135px;
+            max-width: 300px;
+            margin: 0 1em 1em 0;
+            .card-body {
+                width: 60%;
+                height: auto;
+                font-size: 12px;
+            }
+            img {
+                padding: 0.3em;
+                height: 64px;
+                width: 64px;
+            }
+
         }
     }
-    .accordion.contact {
-        width: 80%;
-        margin-top: 3em;
-        padding: 0.5em;
-        background-color: $muddy-brown;
-        color: $main-white;
-        border: $border-ver-2;
-        text-transform: uppercase;
-        &:hover {
-            background-color: $main-white;
+    .accordion-container {
+        @include flexbox;
+        width: 100%;
+        .accordion.contact {
+            width: 80%;
+            margin: 0.3em;
+            padding: 0.5em;
+            background-color: $muddy-brown;
+            color: $main-white;
             border: $border-ver-2;
-            color: $muddy-brown;
+            text-transform: uppercase;
+            &:hover {
+                background-color: $main-white;
+                border: $border-ver-2;
+                color: $muddy-brown;
+            }
         }
+    }
+    .accordion-content {
+        width: 80%;
+        padding: 1em;
+        background-color: beige;
     }
 }
+
 
 .services-header {
     img {
@@ -334,7 +370,6 @@ a:hover {
     font-weight: lighter;
     h1 {
         margin-top: 1em
-            
     }
     h4 {
         font-size: 1em;
@@ -347,4 +382,24 @@ a:hover {
 }
 
 
-footer {}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    background-color: $muddy-brown;
+    color: $main-white;
+    ul {
+        list-style-type: none;
+        @include flexbox;
+        padding: 1em;
+
+        li a {
+            text-decoration: none;
+            color: white;
+            padding: 1em;
+        }
+    }
+}
+
+.footer {}
