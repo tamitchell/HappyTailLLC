@@ -12,15 +12,6 @@
 //format footer
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
-@mixin flexbox {
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-@mixin brownbutton {}
 
 /*Font-Stack*/
 
@@ -37,11 +28,101 @@ $comment-pic: 264px;
 
 $muddy-brown: #1B110C;
 $main-white: #fff;
+$orange: #DB9363;
 $border-ver-1:2px solid white;
 $border-ver-2:2px solid #1B110C;
 
+/*Mixins*/
 
-/*NAVBAR STYLE*/
+@mixin flexbox {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+@mixin white-to-brown-btn {
+    margin-top: 3em;
+    background-color: transparent;
+    color: $main-white;
+    border: $border-ver-1;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $muddy-brown;
+        border: $border-ver-2;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@mixin brown-to-white-btn {
+    margin-top: 3em;
+    background-color: transparent;
+    border: $border-ver-2;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: $muddy-brown;
+        &:hover {
+            color: $main-white;
+        }
+    }
+    &:hover {
+        background-color: $muddy-brown;
+        border: $border-ver-2;
+    }
+}
+
+
+/*Site Dividers*/
+
+.first-divider {
+    margin: 0;
+    height: 20px;
+    background-color: $orange;
+    border: none;
+}
+
+.second-divider {
+    margin: 0;
+    height: 20px;
+    background-color: #DB9363;
+    border: none;
+
+}
+
+.third-divider {
+    margin: 0;
+    height: 20px;
+    background-color: #DB9363;
+    border: none;
+}
+
+.fourth-divider {
+    margin: 0;
+    height: 20px;
+    background-color: #DB9363;
+}
+
+
+/*Buttons*/
+
+.main-btn {
+    @include brown-to-white-btn()
+}
+
+/*Body, Main Styles*/
 
 * {
     margin: 0;
@@ -69,10 +150,8 @@ a:hover {
     text-decoration: none;
 }
 
-nav {
-    z-index: 1;
 
-}
+/*NAVBAR Style*/
 
 .navbar {
     background-color: $muddy-brown;
@@ -107,80 +186,58 @@ nav {
     }
 }
 
+/*SLIDERS*/
+
 .banner-slide {
     padding: 0;
-    height: 30%;
-    max-height: 10em;
-    .carousel-caption {
-        top: 40%;
-        transform: translateY(-40%);
+    height: 30em;
+    max-height: 50%;
+    overflow-y: hidden;
+    .banner-img {
+        height: 30em;
+        max-height: 50%;
+        overflow-y: hidden;
     }
-    .btn.banner {
-        margin-top: 3em;
-        background-color: transparent;
-        color: $main-white;
-        border: $border-ver-1;
-        text-transform: uppercase;
-        &:hover {
-            background-color: $muddy-brown;
-            border: $border-ver-2;
+    .banner-btn {
+        @include white-to-brown-btn();
+
+    }
+}
+
+
+/*Mission Statement Styling*/
+
+.mission-wrapper {
+    background-image: url('/images/photography/wrinkly_puppy.jpeg');
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .mission {
+        position: relative;
+        padding: 5em 0;
+        .mission-statement {
+            width: 50%;
+            max-width: 50em;
+        }
+        img {
+            position: absolute;
+        }
+        .satisfaction-logo {
+            width: 64px;
+            right: 1%;
+            top: 4%;
+        }
+        .mission-img {
+            top: 12%;
+            right: 0.5%;
+            z-index: -1;
+            width: 60%;
         }
     }
+
 }
 
-
-
-.first-divider {
-    margin: 0;
-    height: 20px;
-    background-color: #DB9363;
-    border: none;
-}
-
-.container.mission {
-    position: relative;
-    padding: 5em 0;
-    .mission-statement {
-        width: 50%;
-        max-width: 50em;
-    }
-    img {
-        position: absolute;
-    }
-    .satisfaction-logo {
-        width: 64px;
-        right: 9%;
-    }
-    .mission-img {
-        top: 12%;
-        right: 0.5%;
-        z-index: -1;
-        width: 60%;
-    }
-    .mission-button {
-        margin-top: 3em;
-        background-color: transparent;
-        color: $main-white;
-        border: $border-ver-2;
-        text-transform: uppercase;
-        a {
-            color: $muddy-brown;
-            &:hover {
-                color: $main-white;
-            }
-        }
-        &:hover {
-            background-color: $muddy-brown;
-            border: $border-ver-1;
-        }
-    }
-}
-
-.second-divider {
-    margin: 0;
-    height: 20px;
-    background-color: #DB9363;
-}
+/*What To Expect Container Styling*/
 
 .container-fluid.expectations {
     display: flex;
@@ -201,11 +258,7 @@ nav {
 
 }
 
-.third-divider {
-    margin: 0;
-    height: 20px;
-    background-color: #DB9363;
-}
+/*Testimonials Styling*/
 
 .container.testimonials {
     text-align: center;
@@ -229,25 +282,6 @@ nav {
         width: 264px;
         height: 264px;
     }
-    .btn.reviews {
-        margin-top: 3em;
-        background-color: transparent;
-        color: $main-white;
-        border: $border-ver-2;
-        text-transform: uppercase;
-        color: $muddy-brown;
-        &:hover {
-            background-color: $muddy-brown;
-            border: $border-ver-1;
-            color: white;
-        }
-    }
-}
-
-.fourth-divider {
-    margin: 0;
-    height: 20px;
-    background-color: #DB9363;
 }
 
 .container.questions {
@@ -411,16 +445,57 @@ nav {
         width: 100%;
         margin-bottom: 1em;
     }
-}
-
-//Blog Page
+} //Blog Page
 .latest-posts {
+    padding: 1em;
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-right: 4em;
 }
 
+.meet-founder-container {
 
-//Global footer
+    h1 {
+        padding-top: 2em;
+        padding-bottom: 1.5em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .founder-img-container {
+        float: right;
+        width: 300px;
+        height: 300px;
+        margin-left: 1em;
+        margin-bottom: 3em; //        border-radius: 100%;
+        overflow-x: hidden;
+        img {
+            width: 400px;
+            height: 300px; //            clip: rect(0px, 160px, 200px, 0px);
+        }
+        h5 {
+            padding: 1em;
+            text-align: center;
+        }
+    }
+
+}
+
+.company-values {
+    //    background-color: $orange;
+    padding: 1em; //    background-image: url('../images/photography/pawprints.png');
+    //    background-position: center;
+    //    background-size: cover;
+    //    background-repeat: no-repeat;
+    h3 {
+        text-align: center;
+        padding: 2em;
+    }
+
+} //Global footer
 footer {
     background-color: $muddy-brown;
     color: $main-white;
@@ -434,5 +509,42 @@ footer {
             color: white;
             padding: 1em;
         }
+    }
+}
+
+@media (max-width: 575.98px) {
+
+
+    .meet-founder-container {
+
+        h1 {
+            padding-top: 2em;
+            padding-bottom: 1.5em;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 100;
+        }
+        .founder-img-container {
+            width: 100%;
+            float: none;
+            display: block;
+            margin: 0 auto;
+            overflow-x: visible;
+            margin-bottom: 4em;
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+                height: 300px;
+                border-radius: 100%; //            clip: rect(0px, 160px, 200px, 0px);
+            }
+            h5 {
+                width: 100%;
+                padding: 1em;
+                text-align: center;
+            }
+        }
+
     }
 }

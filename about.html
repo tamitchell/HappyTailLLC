@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,54 +18,61 @@
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-lg transparent">
+    <header>
 
-        <!---Centered Logo Brand--->
+        <nav class="navbar navbar-dark navbar-expand-lg transparent">
+
+            <!---Centered Logo Brand--->
 
 
-        <!--Toggle Button for smaller screens/devices-->
+            <!--Toggle Button for smaller screens/devices-->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
 
 
-        <!--Nav List items-->
+            <!--Nav List items-->
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item text active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(currently)</span></a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="pricing.html">Pricing</a>
-                </li>
-                <li class="nav-item navbar-brand">
-                    <a class="nav-link" href="index.html"><img src="images/logo/bignavlogo.png"alt="Happy Tail LLC logo"></a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item text active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item navbar-brand">
+                        <a class="nav-link" href="index.html"><img src="images/logo/bignavlogo.png" alt="Happy Tail LLC logo"></a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="about.html">About<span class="sr-only">(currently)</span></a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
 
-    </nav>
+        </nav>
+
+    </header>
 
     <!--END NAV CONTENT-->
 
-    <div class="container">
+    <div class="container meet-founder-container">
         <h1>Meet the Founder</h1>
-        <img class="" src="" alt="Fiorella Diaz Gambini - Founder of Happy Tail LLC">
-        <h5>Fiorella Diaz Gambini</h5>
+        <div class="founder-img-container">
+            <img class="" src="/images/photography/founder.jpg" alt="Fiorella Diaz Gambini - Founder of Happy Tail LLC">
+            <h5>Fiorella Diaz Gambini</h5>
+
+        </div>
         <p>I am a young entrepreneur as I do what I love the most taking care of dogs and cats.<br>
 
 
@@ -82,55 +90,52 @@
 
 
             <br>I am happy to have started this business. By doing what I love, I can keep meeting wonderful dogs and cats!</p>
-
-
-        <!--Send a message form-->
-        <div class="accordion-container">
-            <button type="button" data-toggle="collapse" data-target="#sendMessage" aria-expanded="false" aria-controls="sendMessage" class="btn accordion contact ">
- Send a Message        
-    </button>
-
-            <div class="collapse accordion-content" id="sendMessage">
-                <form action="/action_page.php" method="post">
-                    <div class="form-group">
-
-                        <label for="formInputName" class="sr-only">Name</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Full Name">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inputEmail" class="sr-only">Email</label>
-                        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inputPhoneNumber">Phone</label>
-                        <input type="text" placeholder="(555) 555 5555">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="inputMessage">Message</label>
-                        <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-
-                    </div>
-
-                </form>
-            </div>
-        </div>
     </div>
 
     <hr class="first-divider">
 
 
-    <div class="container">
+    <div class="container-fluid company-values">
         <!--company values-->
         <h3>We believe there are three steps to establishing a good business. Those are:</h3>
 
+        <!--flexbox-->
+
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="/images/photography/reliable_team.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">A Reliable Team</h5>
+                    <p class="card-text">Insured, licensed, and bonded. We perform background checks on every employee.</p>
+                    <!--                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="/images/photography/peaceful_mission.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">A Peaceful Mission</h5>
+                    <p class="card-text">Our mission is to provide peace of mind to our client and assure the best care for you and your best friend
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="/images/photography/vision.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">A dedicated Vision</h5>
+                    <p class="card-text">We carry out the vision of a happy environment where your four-legged friend will live to the fullest in a safe environment.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
-    <hr class="second-divider">
+    <hr class="second-divider" />
 
 
     <!--Contact Info-->
@@ -141,6 +146,9 @@
             <p class="lead">If you have any questions or concerns, or for reservations and further information on caring for your dog, please contact:</p>
             <h3>Fiorella Gambini</h3>
         </div>
+
+
+        <!--Contact Cards-->
 
         <div class="flex-wrapper-cards">
             <div class="card contact">
@@ -179,15 +187,56 @@
                 <img src="images/ICONS/Gmail.png" class="card-img-left contact" alt="email icon">
                 <div class="card-body">
                     <h6 class="card-title">Email</h6>
-                    <p>happytail.llc@gmail.com
+                    <p><a href="mailto:happytail.llc@gmail.com">happytail.llc@gmail.com</a>
                     </p>
                 </div>
             </div>
         </div>
 
 
+
+        <!--Send a message form-->
+        <div class="accordion-container">
+            <button type="button" data-toggle="collapse" data-target="#sendMessage" aria-expanded="false" aria-controls="sendMessage" class="btn accordion contact ">
+        Send a Message        
+    </button>
+
+            <div class="collapse accordion-content" id="sendMessage">
+                <form action="/action_page.php" method="post">
+                    <div class="form-group">
+
+                        <label for="formInputName" class="sr-only">Name</label>
+                        <input id="formInputName" type="text" class="form-control mb-2 mr-sm-2" placeholder="Full Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail" class="sr-only">Email</label>
+                        <input id="inputEmail" type="email" class="form-control mb-2 mr-sm-2" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPhoneNumber">Phone</label>
+                        <input id="inputPhoneNumber" type="text" placeholder="(555) 555 5555">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
     </div>
     <!--END Contact Icons-->
+
+
+
+    <hr class="third-divider" />
 
     <div class="container testimonials">
 
@@ -195,10 +244,10 @@
 
         <h3>Check us out on Facebook!</h3>
 
-
-        <iframe class="embed-responsive-item" src="https://www.facebook.com/pg/happytailva/reviews/"></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.facebook.com/pg/happytailva/reviews/" allowfullscreen></iframe>
+        </div>
     </div>
-
 
     <footer class="footer page-footer font-small">
 
@@ -223,32 +272,32 @@
                     <ul class="list-unstyled">
                         <li>
                             <p>
-                                <a href="#!">HOME</a>
+                                <a href="index.html">HOME</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a href="#!">SERVICES</a>
+                                <a href="services.html">SERVICES</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a href="#!">PRICING</a>
+                                <a href="pricing.html">PRICING</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a href="#!">BLOG</a>
+                                <a href="blog.html">BLOG</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a href="#!">ABOUT US</a>
+                                <a href="about.html">ABOUT US<span class="sr-only">(currently)</span></a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a href="#!">CONTACT</a>
+                                <a href="contact.html">CONTACT</a>
                             </p>
                         </li>
                     </ul>
@@ -271,7 +320,7 @@
                         </li>
                         <li>
                             <p>
-                                <i class="fa fa-envelope mr-3"></i> happytail.llc@gmail.com</p>
+                                <i class="fa fa-envelope mr-3"></i> <a href="mailto:happytail.llc@gmail.com">happytail.llc@gmail.com</a></p>
                         </li>
                         <li>
                             <p>
@@ -322,4 +371,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </body>
+
 </html>

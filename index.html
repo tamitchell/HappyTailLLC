@@ -17,76 +17,86 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark custom-nav navbar-expand-lg transparent">
+    <header>
+        <nav class="navbar navbar-dark custom-nav navbar-expand-lg transparent">
 
-        <!---Centered Logo Brand--->
-
-
-        <!--Toggle Button for smaller screens/devices-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!--Toggle Button for smaller screens/devices-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
 
-        <!--Nav List items-->
+            <!--Nav List items-->
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(currently)</span></a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="pricing.html">Pricing</a>
-                </li>
-                <li class="nav-item navbar-brand">
-                    <a class="nav-link" href="index.html"><img src="images/logo/bignavlogo.png"alt="Happy Tail LLC logo"></a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item text">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(currently)</span></a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item navbar-brand">
+                        <a class="nav-link" href="index.html"><img src="images/logo/bignavlogo.png" alt="Happy Tail LLC logo"></a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item text">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
 
-    </nav>
+        </nav>
+
+    </header>
 
     <!--SLIDER-->
     <main class="main-content">
 
         <div class="container-fluid banner-slide">
 
-            <div class="carousel slide" data-ride="carousel">
+            <div id="home-slider" class="carousel slide" data-ride="carousel">
 
                 <!--Slide Indicators-->
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#home-slider" data-slide-to="1"></li>
+                    <li data-target="#home-slider" data-slide-to="2"></li>
                 </ol>
 
-                <div class="carousel-inner">
+                <div class="carousel-inner banner">
 
                     <!--First Slide container START-->
                     <div class="carousel-item active">
-                        <video autoplay muted class="puppy-beach-video" width="100%" preload="auto" loop="" style="visibility:visible; width:100%;">
+                        <video autoplay muted class="d-block w-100" preload="auto" loop="" style="visibility:visible">
                     <source src="media/puppy_beach.mp4" type="video/mp4">
                     <source src="media/puppy_beach.webm" type="video/webm">
                 </video>
 
                         <!--First Slide caption-->
-                        <div class="carousel-caption banner d-none d-md-block">
-                            <h1 class="banner">
+                        <div class="carousel-caption align-middle d-md-block">
+                            <h1>
                                 Let's Take a Walk
                             </h1>
-                            <button href="contact.html" class="btn banner">Book An Appointment Today</button>
+
+                            <button class="btn banner-btn">
+
+                            <a href="contact.html">
+                           
+                                Book An Appointment Today
+                                </a>
+                            </button>
+
+
+
                         </div>
                         <!--END First Slide caption-->
                     </div>
@@ -96,10 +106,12 @@
 
                     <div class="carousel-item">
 
-                        <img class="d-block w-100" src="images/photography/sad_dog.jpeg" alt="Sad dog">
+                        <img class="d-block w-100 banner-img" src="images/photography/sad_dog.jpeg" alt="Sad dog">
 
                         <!--Second Slide Caption-->
-                        <div class="carousel-caption banner d-none d-md-block">
+
+
+                        <div class="carousel-caption align-middle d-md-block">
 
 
 
@@ -108,11 +120,18 @@
 
                             <p> Our mission is to provide the best service for your four legged family member. We specialize in one-on-one care to meet your dog’s needs and happiness. We know every dog is different, this is why Happy Tail LLC provides a unique services to our clients and their dogs.</p>
 
+                            <button class="btn banner-btn">
+
                             <a href="services.html">
-                        <button class="btn banner">More on our services</button>
-                    </a>
+                            More on our services              
+                             </a>
+                            </button>
+
+
 
                         </div>
+
+
 
                         <!--END Second Slide Caption-->
 
@@ -124,10 +143,10 @@
                     <!--START Third Slide Container-->
                     <div class="carousel-item">
 
-                        <img class="d-block w-100" src="images/photography/paw_hand.jpeg" alt="Man holding paw of dog forming a part">
+                        <img class="d-block w-100 banner-img" src="images/photography/paw_hand.jpeg" alt="Man holding paw of dog forming a part">
 
                         <!--START Caption Content container-->
-                        <div class="carousel-caption banner d-none d-md-block">
+                        <div class="carousel-caption align-middle d-md-block">
 
                             <h2>Come Find Us</h2>
 
@@ -148,9 +167,14 @@
                                 <br>
                             </p>
 
+                            <button class="btn banner-btn">
+
                             <a href="contact.html">
-                        <button class="btn banner">Send us a message</button>
-                    </a>
+                       Send us a message
+                                                    </a>
+                            </button>
+
+
                         </div>
                         <!--END Caption Content container-->
                     </div>
@@ -158,20 +182,39 @@
 
                 </div>
 
-            </div>
+                <!--Slide Indicators (Arrows)-->
 
-            <!--START Mini Divider-->
-            <hr class="first-divider">
-            <!--END Mini divider-->
+
+                <a class="carousel-control-prev" href="#home-slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+                <a class="carousel-control-next" href="#home-slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+                <!--END Slide-->
+
+
+
+            </div>
+        </div>
+
+        <!--START Mini Divider-->
+        <hr class="first-divider">
+        <!--END Mini divider-->
+
+        <div class="container-fluid mission-wrapper">
 
             <div class="container mission">
 
                 <!--START Mission Statement-->
 
-                <img src="images/photography/wrinkly_puppy.jpeg" class="mission-img" alt="wringkly puppy looking to the left" onContextMenu="return false;">
+                <!--            <img src="images/photography/wrinkly_puppy.jpeg" class="mission-img" alt="wringkly puppy looking to the left" onContextMenu="return false;">-->
 
 
-                <img src="images/logo/100percentguarenteed_BROWN.png" alt="100% Satisfaction Guaranteed logo" oncontextmenu="return false;" class="satisfaction-logo" width="128px">
+                <img src="images/logo/100percentguarenteed_BROWN.png" alt="100% Satisfaction Guaranteed logo" oncontextmenu="return false;" class="satisfaction-logo">
 
                 <div class="mission-statement">
                     <h4>What Makes Us Different</h4>
@@ -184,268 +227,397 @@
                         <br>We are always vigilant of their safety and wellness we are aware of each dog’s needs</p>
 
 
-                    <button class="btn mission-button"><a href="about.html">More About Us</a></button>
+                    <button class="btn main-btn">
+
+                <a href="about.html">
+               More About Us
+                     </a>
+                </button>
+
 
                 </div>
 
 
             </div>
-            <!--END Mission Statement-->
 
-            <!--START Mini Divider-->
-            <hr class="second-divider">
-            <!--END Mini divider-->
-
-            <!--START WHAT TO EXPECT-->
-            <div class="container-fluid expectations">
-
-                <div class="card trust">
-                    <img src="images/ICONS/trustworthiness.png" alt="Trustworthiness icon of two hands shaking" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Trustworthiness</h5>
-                        <p>
-                            It’s like you’re right there through the entire adventure!<br>
+        </div>
 
 
+        <!--END Mission Statement-->
 
-                            <br> You will receive photos, text, and an update for every walk or visit
-                        </p>
-                    </div>
-                </div>
+        <!--START Mini Divider-->
+        <hr class="second-divider">
+        <!--END Mini divider-->
 
-                <div class="card peace">
-                    <img src="images/ICONS/peace_3.png" alt="Peace Icon of lady meditating" class="card-img-top">
+        <!--START WHAT TO EXPECT-->
+        <div class="container-fluid expectations">
 
-                    <div class="card-body">
-
-                        <h5 class="card-title">Peace of Mind</h5>
-                        <p>
-                            We believe experience equals quality care for your dog.<br>
+            <div class="card trust">
+                <img src="images/ICONS/trustworthiness.png" alt="Trustworthiness icon of two hands shaking" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Trustworthiness</h5>
+                    <p>
+                        It’s like you’re right there through the entire adventure!<br>
 
 
 
-                            <br>Our staff brings together knowledge and experience in animal behavior to fuel our passion and love for dogs.
-                        </p>
-
-                        <button href="services.html" class="btn">More On Our Services</button>
-                    </div>
-
-                </div>
-
-                <div class="card relief">
-                    <img src="images/ICONS/relief.png" alt="Relief Icon of cup of green tea" class="card-img-top">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Relief</h5>
-                        <p>
-                            Book Services 24/7 Online or by phone<br>
-
-                            <br>Back up walkers and sitters always available<br>
-
-                            <br><strong>Pet Taxi!</strong> Free pick up and drop off for your pets*<br>
-
-                            <br><em>*only available for boarding services</em><br>
-                        </p>
-                    </div>
+                        <br> You will receive photos, text, and an update for every walk or visit
+                    </p>
                 </div>
             </div>
-            <!--END WHAT TO EXPECT-->
 
-            <!--START Mini Divider-->
-            <hr class="third-divider">
-            <!--END Mini divider-->
+            <div class="card peace">
+                <img src="images/ICONS/peace_3.png" alt="Peace Icon of lady meditating" class="card-img-top">
 
-            <!--START Testimonials-->
-            <div class="container testimonials">
-                <h1>Testimonials</h1>
+                <div class="card-body">
 
-                <h3>See what others are saying</h3>
+                    <h5 class="card-title">Peace of Mind</h5>
+                    <p>
+                        We believe experience equals quality care for your dog.<br>
 
-                <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
 
-                    <div class="carousel-inner">
 
-                        <!--START First comment-->
-                        <div class="carousel-item active">
+                        <br>Our staff brings together knowledge and experience in animal behavior to fuel our passion and love for dogs.
+                    </p>
 
-                            <div class="card testimonial">
-                                <img src="images/Misc/brycepic.jpg" class="comment card-img-top rounded-circle" alt="Smiling brown haired man next to pug">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bryce</h5>
-                                    <img src="images/ICONS/5_stars.PNG" width="20%" height="auto">
-                                    <p>"There is no better dog care service out there. My wife and I use their them at least twice a week!"
-                                    </p>
-                                </div>
+                    <button class="btn main-btn">
+
+                    <a href="services.html">
+                        Our Services
+                    </a>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="card relief">
+                <img src="images/ICONS/relief.png" alt="Relief Icon of cup of green tea" class="card-img-top">
+
+                <div class="card-body">
+                    <h5 class="card-title">Relief</h5>
+                    <p>
+                        Book Services 24/7 Online or by phone<br>
+
+                        <br>Back up walkers and sitters always available<br>
+
+                        <br><strong>Pet Taxi!</strong> Free pick up and drop off for your pets*<br>
+
+                        <br><em>*only available for boarding services</em><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--END WHAT TO EXPECT-->
+
+        <!--START Mini Divider-->
+        <hr class="third-divider">
+        <!--END Mini divider-->
+
+        <!--START Testimonials-->
+        <div class="container testimonials">
+            <h1>Testimonials</h1>
+
+            <h3>See what others are saying</h3>
+
+            <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!--START First comment-->
+                    <div class="carousel-item active">
+
+                        <div class="card testimonial">
+                            <img src="images/Misc/brycepic.jpg" class="comment card-img-top rounded-circle" alt="Smiling brown haired man next to pug">
+                            <div class="card-body">
+                                <h5 class="card-title">Bryce</h5>
+                                <img src="images/ICONS/5_stars.PNG" alt="five-star comment rating">
+                                <p>"There is no better dog care service out there. My wife and I use their them at least twice a week!"
+                                </p>
                             </div>
                         </div>
-
-                        <!--END First comment-->
-                        <div class="carousel-item">
-                            <!--START Second comment-->
-                            <div class="card testimonial">
-                                <img src="https://images.pexels.com/photos/40064/theme-candid-portraits-smile-woman-girl-40064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="comment card-img-top rounded-circle" alt="Happy girl smiling with husky.">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Simone</h5>
-                                    <img src="images/ICONS/5_stars.PNG" width="20%" height="auto">
-                                    <p>"Happy Tails LLC trained Lily to walk on the leash. We are very pleased for the services that Happy Tail LLC provided to Lily"
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End second comment-->
-
-                        <!--START third comment-->
-                        <div class="carousel-item">
-                            <div class="card testimonial">
-                                <img src="images/Misc/chrispic.jpg" class="comment card-img-top rounded-circle" alt="Man kissing irritated cat">
-                                <div class="card-body">
-                                    <h5 class="card-title">Chris</h5>
-
-                                    <img src="images/ICONS/5_stars.PNG" width="20%" height="auto">
-                                    <p>"Fiorella is trustworthy, responsible, and best of all I know she she truly cares for the pets she looks after."
-                                    </p>
-                                </div>
-                            </div>
-                            <!--End third comment-->
-                        </div>
-
-                        <button class="btn reviews" href="blog.html">More Reviews</button>
-
-
-                        <!--END Testimonials (Carousel Inner)-->
                     </div>
 
-                    <a class="carousel-control-prev" href="#testimonial-slider" role="button" data-slide="prev">
+                    <!--END First comment-->
+                    <div class="carousel-item">
+                        <!--START Second comment-->
+                        <div class="card testimonial">
+                            <img src="https://images.pexels.com/photos/40064/theme-candid-portraits-smile-woman-girl-40064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="comment card-img-top rounded-circle" alt="Happy girl smiling with husky.">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Simone</h5>
+                                <img src="images/ICONS/5_stars.PNG" alt="four-star comment rating">
+                                <p>"Happy Tails LLC trained Lily to walk on the leash. We are very pleased for the services that Happy Tail LLC provided to Lily"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End second comment-->
+
+                    <!--START third comment-->
+                    <div class="carousel-item">
+                        <div class="card testimonial">
+                            <img src="images/Misc/chrispic.jpg" class="comment card-img-top rounded-circle" alt="Man kissing irritated cat">
+                            <div class="card-body">
+                                <h5 class="card-title">Chris</h5>
+
+                                <img src="images/ICONS/5_stars.PNG" alt="five-star comment rating">
+                                <p>"Fiorella is trustworthy, responsible, and best of all I know she she truly cares for the pets she looks after."
+                                </p>
+                            </div>
+                        </div>
+                        <!--End third comment-->
+                    </div>
+
+                    <button class="btn main-btn">
+                    <a href="blog.html">
+                    More Reviews
+                    </a>
+                         </button>
+
+
+                    <!--END Testimonials (Carousel Inner)-->
+                </div>
+
+                <a class="carousel-control-prev" href="#testimonial-slider" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-                    <a class="carousel-control-next" href="#testimonial-slider" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#testimonial-slider" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 
-                    <p class="disclosure"> &#42photos changed for privacy</p>
+                <p class="disclosure"> &#42;photos changed for privacy</p>
 
-                    <!--END Testimonials Slider-->
-                </div>
-
-                <!--END Testimonials Container-->
+                <!--END Testimonials Slider-->
             </div>
 
-            <hr class="fourth-divider">
+            <!--END Testimonials Container-->
+        </div>
+
+        <hr class="fourth-divider">
 
 
-            <!--START Questions and Contact section-->
-            <div class="container questions">
-                <div class="questions-call">
-                    <h1 class="display-4">Questions?</h1>
-                    <p class="lead">If you have any questions or concerns, or for reservations and further information on caring for your dog, please contact:</p>
-                    <h3>Fiorella Gambini</h3>
-                </div>
+        <!--START Questions and Contact section-->
+        <div class="container questions">
+            <div class="questions-call">
+                <h1 class="display-4">Questions?</h1>
+                <p class="lead">If you have any questions or concerns, or for reservations and further information on caring for your dog, please contact:</p>
+                <h3>Fiorella Gambini</h3>
+            </div>
 
-                <!--START FORM Accordion-->
-                <!--END Form Accordion-->
 
-                <div class="flex-wrapper-cards">
-                    <div class="card contact">
-                        <img src="images/ICONS/location.png" class="card-img-left contact" alt="location icon">
-                        <div class="card-body">
-                            <h6 class="card-title">Location</h6>
-                            <p>
-                                3580 Ellery Circle<br> Falls Church Virginia 22041
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card contact">
-                        <img src="images/ICONS/phone.png" class="card-img-left contact" alt="phone icon">
-                        <div class="card-body">
-                            <h6 class="card-title">Telephone</h6>
-                            <p>
-                                Fiorella Gambini<br> 703-303-7099
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="card contact">
-                        <img src="images/ICONS/fax_icon.png" class="card-img-left contact" alt="phone icon">
-                        <div class="card-body">
-                            <h6 class="card-title">Fax</h6>
-                            <p>
-                                703-890-2653
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card contact">
-
-                        <img src="images/ICONS/Gmail.png" class="card-img-left contact" alt="email icon">
-                        <div class="card-body">
-                            <h6 class="card-title">Email</h6>
-                            <p>happytail.llc@gmail.com
-                            </p>
-                        </div>
+            <div class="flex-wrapper-cards">
+                <div class="card contact">
+                    <img src="images/ICONS/location.png" class="card-img-left contact" alt="location icon">
+                    <div class="card-body">
+                        <h6 class="card-title">Location</h6>
+                        <p>
+                            3580 Ellery Circle<br> Falls Church Virginia 22041
+                        </p>
                     </div>
                 </div>
-                <!--END Contact Icons-->
+
+                <div class="card contact">
+                    <img src="images/ICONS/phone.png" class="card-img-left contact" alt="phone icon">
+                    <div class="card-body">
+                        <h6 class="card-title">Telephone</h6>
+                        <p>
+                            Fiorella Gambini<br> <a href="tel:703-303-7099">703-303-7099</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="card contact">
+                    <img src="images/ICONS/fax_icon.png" class="card-img-left contact" alt="phone icon">
+                    <div class="card-body">
+                        <h6 class="card-title">Fax</h6>
+                        <p>
+                            703-890-2653
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card contact">
+
+                    <img src="images/ICONS/Gmail.png" class="card-img-left contact" alt="email icon">
+                    <div class="card-body">
+                        <h6 class="card-title">Email</h6>
+                        <p><a href="mailto:happytail.llc@gmail.com">happytail.llc@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--END Contact Icons-->
 
 
-                <!--Send a message form-->
-                <div class="accordion-container">
-                    <button type="button" data-toggle="collapse" data-target="#sendMessage" aria-expanded="false" aria-controls="sendMessage" class="btn accordion contact ">
+            <!--Send a message form-->
+            <div class="accordion-container">
+                <button type="button" data-toggle="collapse" data-target="#sendMessage" aria-expanded="false" aria-controls="sendMessage" class="btn accordion contact ">
         Send a Message        
     </button>
 
-                    <div class="collapse accordion-content" id="sendMessage">
-                        <form action="/action_page.php" method="post">
-                            <div class="form-group">
+                <div class="collapse accordion-content" id="sendMessage">
+                    <form action="/action_page.php" method="post">
+                        <div class="form-group">
 
-                                <label for="formInputName" class="sr-only">Name</label>
-                                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Full Name">
-                            </div>
+                            <label for="formInputName" class="sr-only">Name</label>
+                            <input id="formInputName" type="text" class="form-control mb-2 mr-sm-2" placeholder="Full Name">
+                        </div>
 
-                            <div class="form-group">
-                                <label for="inputEmail" class="sr-only">Email</label>
-                                <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Email">
-                            </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="sr-only">Email</label>
+                            <input id="inputEmail" type="email" class="form-control mb-2 mr-sm-2" placeholder="Email">
+                        </div>
 
-                            <div class="form-group">
-                                <label for="inputPhoneNumber">Phone</label>
-                                <input type="text" placeholder="(555) 555 5555">
-                            </div>
+                        <div class="form-group">
+                            <label for="inputPhoneNumber">Phone</label>
+                            <input id="inputPhoneNumber" type="text" placeholder="(555) 555 5555">
+                        </div>
 
-                            <div class="form-group">
-                                <label for="inputMessage">Message</label>
-                                <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
+                        <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <textarea class="form-control" id="inputMessage" rows="3"></textarea>
 
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
 
-                            </div>
+                        </div>
 
-                        </form>
-                    </div>
+                    </form>
                 </div>
-
-                <img src="images/photography/dog_looking_forward.jpeg" class="img-fluid question" alt="chocolate labrador looking forward">
-                <!--END Contact Icons-->
-
-
-
-
-
-                <!--END Send a message form-->
-
             </div>
+
+            <img src="images/photography/dog_looking_forward.jpeg" class="img-fluid question" alt="chocolate labrador looking forward">
+            <!--END Contact Icons-->
+
+
+
+
+
+            <!--END Send a message form-->
+
 
             <!--END Questions and Contact section-->
 
         </div>
 
-        <!--START Page Footer-->
-
     </main>
+    <!--START Page Footer-->
+    <footer class="footer page-footer font-small">
+
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Site Navigation</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <a href="index.html">HOME<span class="sr-only">(currently)</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="services.html">SERVICES</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="pricing.html">PRICING</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="blog.html">BLOG</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="about.html">ABOUT US</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="contact.html">CONTACT</a>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Contact details -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="fa fa-home mr-3"></i> 3580 Ellery Circle Falls Church Virginia 22041</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-envelope mr-3"></i> <a href="mailto:happytail.llc@gmail.com">happytail.llc@gmail.com</a></p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-phone mr-3"></i> <a href="tel:703-303-7099">703-303-7099</a>
+
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+                    <!-- Social buttons -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+                    <!-- Facebook -->
+                    <button type="button" class="btn-floating btn-fb">
+            <i class="fa fa-facebook"></i>
+          </button>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Web Developed and Designed by Tasha Mitchell, 2018. All Rights Reserved.
+            <a href="https://tamitchell.github.io/"> Contact the Developer</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
 
 
     <!--END Page Footer-->
