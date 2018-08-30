@@ -141,7 +141,7 @@ a:hover {
 .mission-wrapper {
   background-image: url("/images/photography/wrinkly_puppy.jpeg");
   background-position: bottom right;
-  background-size: contain;
+  background-size: 70%;
   background-repeat: no-repeat; }
   /* line 215, /Users/tasha/projects/HappyTailLLC/stylesheets/main.scss */
   .mission-wrapper .mission {
