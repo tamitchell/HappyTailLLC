@@ -495,7 +495,28 @@ a:hover {
         padding: 2em;
     }
 
-} //Global footer
+}
+
+.contact-container {
+    h1 {
+        margin: 1em;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        margin: 3em;
+    }
+}
+
+
+//Global footer
 footer {
     background-color: $muddy-brown;
     color: $main-white;
