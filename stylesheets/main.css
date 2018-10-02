@@ -389,6 +389,8 @@ a:hover {
 }
 
 .container-fluid.accordions .accordion-buttons .btn {
+  background-position: center;
+  background-size: cover;
   margin: 0 0.3em 0.3em 0;
   font-size: 3em;
   text-align: center;
@@ -404,26 +406,18 @@ a:hover {
 
 .container-fluid.accordions .accordion-buttons .boarding {
   background-image: url(/images/photography/dog_boarding.jpeg);
-  background-position: center;
-  background-size: cover;
 }
 
 .container-fluid.accordions .accordion-buttons .walking {
   background-image: url(/images/photography/dog_walking.jpeg);
-  background-position: center;
-  background-size: cover;
 }
 
 .container-fluid.accordions .accordion-buttons .sitting {
   background-image: url(/images/photography/sitting.jpeg);
-  background-position: center;
-  background-size: cover;
 }
 
 .container-fluid.accordions .accordion-buttons .specialty {
   background-image: url(/images/photography/dog_specialty.jpeg);
-  background-position: center;
-  background-size: cover;
 }
 
 .container-fluid.accordions .accordion-buttons .accord-text {
