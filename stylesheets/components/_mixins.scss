@@ -1,0 +1,78 @@
+/*Mixins*/
+
+@mixin flexbox {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@mixin blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+@mixin white-to-brown-btn {
+    margin-top: 3em;
+    background-color: transparent;
+    color: $main-white;
+    border: $border-ver-1;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $muddy-brown;
+        border: $border-ver-2;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@mixin brown-to-white-btn {
+    margin-top: 3em;
+    background-color: transparent;
+    border: $border-ver-2;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: $muddy-brown;
+        &:hover {
+            color: $main-white;
+        }
+    }
+    &:hover {
+        background-color: $muddy-brown;
+        border: $border-ver-2;
+    }
+}
+
+
+@mixin cards {
+    .flex-wrapper-cards {
+        @include flexbox;
+        width: 100%;
+        margin-bottom: 5em;
+        .card {
+            @include flexbox;
+            width: 40%;
+            height: 135px;
+            max-width: 300px;
+            margin: 0 1em 1em 0;
+            .card-body {
+                width: 60%;
+                height: auto;
+                font-size: 12px;
+            }
+            img {
+                padding: 0.3em;
+                height: 64px;
+                width: 64px;
+            }
+
+        }
+    }
+}

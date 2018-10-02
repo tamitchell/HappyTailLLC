@@ -1,0 +1,36 @@
+@media (max-width: 575.98px) {
+
+
+    .meet-founder-container {
+
+        h1 {
+            padding-top: 2em;
+            padding-bottom: 1.5em;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 100;
+        }
+        .founder-img-container {
+            width: 100%;
+            float: none;
+            display: block;
+            margin: 0 auto;
+            overflow-x: visible;
+            margin-bottom: 4em;
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+            }
+            h5 {
+                width: 100%;
+                padding: 1em;
+                text-align: center;
+            }
+        }
+
+    }
+}

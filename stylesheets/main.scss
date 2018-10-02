@@ -1,7 +1,7 @@
 //facebook iframe needs to appear
 //about image should appear
 //establishing a good business build out
-//redo blog slider 
+//redo blog slider
 //blog dividers should appear
 //build contact us page
 //fix size of banner slider so that it's max-height is only 30%
@@ -10,562 +10,331 @@
 //what to expect section should have header"what to expect"
 //what to expect container should be diff colors(?) more appealing
 //format footer
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
-
-/*Font-Stack*/
-
-$header: 3em 'Montserrat';
-$sub-header: 2em 'Montserrat';
-$regular-text: 2em 'Open Sans';
-
-/*Images and Sizing*/
-
-$icon: 128px;
-$comment-pic: 264px;
-
-/*Colors*/
-
-$muddy-brown: #1B110C;
-$main-white: #fff;
-$orange: #DB9363;
-$border-ver-1:2px solid white;
-$border-ver-2:2px solid #1B110C;
-
-/*Mixins*/
-
-@mixin flexbox {
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-@mixin blur {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-}
-
-@mixin white-to-brown-btn {
-    margin-top: 3em;
-    background-color: transparent;
-    color: $main-white;
-    border: $border-ver-1;
-    text-transform: uppercase;
-    &:hover {
-        background-color: $muddy-brown;
-        border: $border-ver-2;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-@mixin brown-to-white-btn {
-    margin-top: 3em;
-    background-color: transparent;
-    border: $border-ver-2;
-    text-transform: uppercase;
-    a {
-        text-decoration: none;
-        color: $muddy-brown;
-        &:hover {
-            color: $main-white;
-        }
-    }
-    &:hover {
-        background-color: $muddy-brown;
-        border: $border-ver-2;
-    }
-}
-
-
-/*Site Dividers*/
-
-.first-divider {
-    margin: 0;
-    height: 20px;
-    background-color: $orange;
-    border: none;
-}
-
-.second-divider {
-    margin: 0;
-    height: 20px;
-    background-color: #DB9363;
-    border: none;
-
-}
-
-.third-divider {
-    margin: 0;
-    height: 20px;
-    background-color: #DB9363;
-    border: none;
-}
-
-.fourth-divider {
-    margin: 0;
-    height: 20px;
-    background-color: #DB9363;
-}
-
+@import "./components/mixins.scss";
+@import "./components/variables.scss";
+@import "./components/navbar.scss";
+@import "./components/sliders.scss";
+@import "./components/dividers.scss";
+@import "./components/media_queries.scss";
 
 /*Buttons*/
 
 .main-btn {
-    @include brown-to-white-btn()
+  @include brown-to-white-btn();
 }
 
 /*Body, Main Styles*/
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .main-content {
-    flex: 1;
-    padding-bottom: 00px;
+  flex: 1;
+  padding-bottom: 00px;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
-/*NAVBAR Style*/
-
-.navbar {
-    background-color: $muddy-brown;
-    color: $main-white; //    height: 50px;
-    min-height: 50px;
-    .navbar-brand img {
-        position: absolute;
-        top: 0%;
-        left: 43%;
-        transform: translate(-50, -50);
-        height: 128px;
-        width: 128px;
-        z-index: 1;
-
-    }
-    ul {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    li {
-        height: 100%;
-        padding-right: 4%;
-
-    }
-    a {
-        font: $sub-header;
-        font-size: 1em;
-        text-transform: uppercase;
-        letter-spacing: 0.3em;
-        color: white;
-    }
-}
-
-/*SLIDERS*/
-
-.banner-slide {
-    padding: 0;
-    height: 30em;
-    max-height: 50%;
-    overflow-y: hidden;
-    .banner-img {
-        height: 30em;
-        max-height: 50%;
-        overflow-y: hidden;
-    }
-    .banner-btn {
-        @include white-to-brown-btn();
-
-    }
-}
-
 
 /*Mission Statement Styling*/
 
 .mission-wrapper {
-    background-image: url('/images/photography/wrinkly_puppy.jpeg');
-    background-position: bottom right;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    .mission {
-        position: relative;
-        padding: 5em 0;
-        .mission-statement {
-            width: 50%;
-            max-width: 50em;
-        }
-        img {
-            position: absolute;
-        }
-        .satisfaction-logo {
-            width: 64px;
-            right: 1%;
-            top: 4%;
-        }
-        .mission-img {
-            top: 12%;
-            right: 0.5%;
-            z-index: -1;
-            width: 60%;
-        }
+  background-image: url("/images/photography/wrinkly_puppy.jpeg");
+  background-position: bottom right;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  .mission {
+    position: relative;
+    padding: 5em 0;
+    .mission-statement {
+      width: 50%;
+      max-width: 50em;
     }
-
+    img {
+      position: absolute;
+    }
+    .satisfaction-logo {
+      width: 64px;
+      right: 1%;
+      top: 4%;
+    }
+    .mission-img {
+      top: 12%;
+      right: 0.5%;
+      z-index: -1;
+      width: 60%;
+    }
+  }
 }
 
 /*What To Expect Container Styling*/
 
 .container-fluid.expectations {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    img {
-        margin: 0 auto;
-        width: 128px;
-    }
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  img {
+    margin: 0 auto;
+    width: 128px;
+  }
 
-    .card {
-        padding-top: 1em;
-        text-align: center;
-        width: 20em;
-        height: auto;
-        border-radius: 0;
-    }
-
+  .card {
+    padding-top: 1em;
+    text-align: center;
+    width: 20em;
+    height: auto;
+    border-radius: 0;
+  }
 }
 
 /*Testimonials Styling*/
 
 .container.testimonials {
-    text-align: center;
-    h1 {
-        margin-top: 1em;
-        padding: 1em;
-        background-image: url(/images/Misc/testimonials_background.png);
-        background-size: cover;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        color: $main-white;
-    }
-    h3 {
-        font-size: 1em;
-        color: #303030;
-        font-style: italic;
-        margin-bottom: 2em;
-    }
-    .comment {
-        margin: 0.3em auto 0 auto;
-        width: 264px;
-        height: 264px;
-    }
+  text-align: center;
+  h1 {
+    margin-top: 1em;
+    padding: 1em;
+    background-image: url(/images/Misc/testimonials_background.png);
+    background-size: cover;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $main-white;
+  }
+  h3 {
+    font-size: 1em;
+    color: #303030;
+    font-style: italic;
+    margin-bottom: 2em;
+  }
+  .comment {
+    margin: 0.3em auto 0 auto;
+    width: 264px;
+    height: 264px;
+  }
 }
 
 .container.questions {
-    margin-top: 2em;
-    .questions-call {
-        color: $muddy-brown;
-        text-align: center;
-        background-color: none;
-        margin-bottom: 3em;
-        h1 {
-            text-transform: uppercase;
-        }
+  margin-top: 2em;
+  .questions-call {
+    color: $muddy-brown;
+    text-align: center;
+    background-color: none;
+    margin-bottom: 3em;
+    h1 {
+      text-transform: uppercase;
     }
+  }
 
-    .flex-wrapper-cards {
-        @include flexbox;
-        width: 100%;
-        margin-bottom: 5em;
-        .card {
-            @include flexbox;
-            width: 40%;
-            height: 135px;
-            max-width: 300px;
-            margin: 0 1em 1em 0;
-            .card-body {
-                width: 60%;
-                height: auto;
-                font-size: 12px;
-            }
-            img {
-                padding: 0.3em;
-                height: 64px;
-                width: 64px;
-            }
-
-        }
-    }
-
+  @include cards();
 }
 
-
-
 .services-header {
-    img {
-        width: 100%;
-    }
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-        padding-bottom: 0.3em;
-        border-bottom: 2px solid #DB9363;
-        font: $header;
-    }
-    h3 {
-        padding: 1em 0 1em 0;
-        text-align: center;
-        font-size: 1em;
-    }
+  img {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #db9363;
+    font: $header;
+  }
+  h3 {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    font-size: 1em;
+  }
 }
 
 .container-fluid.accordions {
-    margin: 3em 2em;
+  margin: 3em 2em;
 
-    .accordion-buttons {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        .btn {
-            margin: 0 0.3em 0.3em 0;
-            font-size: 3em;
-            text-align: center;
-            padding: 1em;
-            width: 50em;
-            max-width: 500px;
-            height: auto;
-            text-transform: uppercase;
-            color: $main-white;
-            letter-spacing: 19px;
-            font-weight: lighter;
-        }
-        .boarding {
-            background-image: url(/images/photography/dog_boarding.jpeg);
-            background-position: center;
-            background-size: cover;
-
-        }
-        .walking {
-            background-image: url(/images/photography/dog_walking.jpeg);
-            background-position: center;
-            background-size: cover;
-        }
-        .sitting {
-            background-image: url(/images/photography/sitting.jpeg);
-            background-position: center;
-            background-size: cover;
-        }
-        .specialty {
-            background-image: url(/images/photography/dog_specialty.jpeg);
-            background-position: center;
-            background-size: cover;
-        }
-        .accord-text {
-            padding: 0 1em 1em 1em;
-            max-width: 500px;
-
-        }
+  .accordion-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      margin: 0 0.3em 0.3em 0;
+      font-size: 3em;
+      text-align: center;
+      padding: 1em;
+      width: 50em;
+      max-width: 500px;
+      height: auto;
+      text-transform: uppercase;
+      color: $main-white;
+      letter-spacing: 19px;
+      font-weight: lighter;
     }
+    .boarding {
+      background-image: url(/images/photography/dog_boarding.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .walking {
+      background-image: url(/images/photography/dog_walking.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .sitting {
+      background-image: url(/images/photography/sitting.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .specialty {
+      background-image: url(/images/photography/dog_specialty.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .accord-text {
+      padding: 0 1em 1em 1em;
+      max-width: 500px;
+    }
+  }
 }
 
 .question-img {
-    width: 50%;
+  width: 50%;
 }
 
 .services-img-container {
-    @include flexbox();
-    img {
-        width: 50%;
-        height: 50%;
-    }
+  @include flexbox();
+  img {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .accordion-container {
-    @include flexbox;
-    width: 100%;
-    .accordion.contact {
-        width: 80%;
-        margin: 0.3em;
-        padding: 1em;
-        background-color: $muddy-brown;
-        color: $main-white;
-        border: $border-ver-2;
-        text-transform: uppercase;
-        &:hover {
-            background-color: $main-white;
-            border: $border-ver-2;
-            color: $muddy-brown;
-        }
+  @include flexbox;
+  width: 100%;
+  .accordion.contact {
+    width: 80%;
+    margin: 0.3em;
+    padding: 1em;
+    background-color: $muddy-brown;
+    color: $main-white;
+    border: $border-ver-2;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $main-white;
+      border: $border-ver-2;
+      color: $muddy-brown;
     }
+  }
 }
 
 .accordion-content {
-    width: 80%;
-    padding: 1em;
-    background-color: beige;
+  width: 80%;
+  padding: 1em;
+  background-color: beige;
 }
 
 .container.pricing-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: lighter;
-    h1 {
-        margin-top: 3em
-    }
-    h4 {
-        font-size: 1em;
-        font-style: italic;
-        color: orange;
-    }
-    .pricing-img-banner {
-        width: 100%;
-        margin-bottom: 1em;
-    }
-} //Blog Page
-.latest-posts {
-    padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  h1 {
+    margin-top: 3em;
+  }
+  h4 {
+    font-size: 1em;
+    font-style: italic;
+    color: orange;
+  }
+  .pricing-img-banner {
     width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
-    padding-right: 4em;
+    margin-bottom: 1em;
+  }
+}
+
+//Blog Page
+.latest-posts {
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  padding-right: 4em;
 }
 
 .meet-founder-container {
-
-    h1 {
-        padding-top: 2em;
-        padding-bottom: 1.5em;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 100;
+  h1 {
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .founder-img-container {
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin-left: 1em;
+    margin-bottom: 3em;
+    overflow-x: hidden;
+    img {
+      width: 400px;
+      height: 300px;
     }
-    .founder-img-container {
-        float: right;
-        width: 300px;
-        height: 300px;
-        margin-left: 1em;
-        margin-bottom: 3em; //        border-radius: 100%;
-        overflow-x: hidden;
-        img {
-            width: 400px;
-            height: 300px; //            clip: rect(0px, 160px, 200px, 0px);
-        }
-        h5 {
-            padding: 1em;
-            text-align: center;
-        }
+    h5 {
+      padding: 1em;
+      text-align: center;
     }
-
+  }
 }
 
 .company-values {
-    //    background-color: $orange;
-    padding: 1em; //    background-image: url('../images/photography/pawprints.png');
-    //    background-position: center;
-    //    background-size: cover;
-    //    background-repeat: no-repeat;
-    h3 {
-        text-align: center;
-        padding: 2em;
-    }
-
+  padding: 1em;
+  h3 {
+    text-align: center;
+    padding: 2em;
+  }
 }
 
 .contact-container {
-    h1 {
-        margin: 1em;
-        text-align: center;
-    }
-    p {
-        text-align: center;
-    }
-    img {
-        width: 100%;
-    }
-    button {
-        display: block;
-        margin: 0 auto;
-        margin: 3em;
-    }
+  h1 {
+    margin: 1em;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
 }
-
 
 //Global footer
 footer {
-    background-color: $muddy-brown;
-    color: $main-white;
-    ul {
-        list-style-type: none;
-        @include flexbox;
-        padding: 1em;
+  background-color: $muddy-brown;
+  color: $main-white;
+  ul {
+    list-style-type: none;
+    @include flexbox;
+    padding: 1em;
 
-        li a {
-            text-decoration: none;
-            color: white;
-            padding: 1em;
-        }
+    li a {
+      text-decoration: none;
+      color: white;
+      padding: 1em;
     }
-}
-
-@media (max-width: 575.98px) {
-
-
-    .meet-founder-container {
-
-        h1 {
-            padding-top: 2em;
-            padding-bottom: 1.5em;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 100;
-        }
-        .founder-img-container {
-            width: 100%;
-            float: none;
-            display: block;
-            margin: 0 auto;
-            overflow-x: visible;
-            margin-bottom: 4em;
-
-            img {
-                display: block;
-                margin: 0 auto;
-                width: 300px;
-                height: 300px;
-                border-radius: 100%; //            clip: rect(0px, 160px, 200px, 0px);
-            }
-            h5 {
-                width: 100%;
-                padding: 1em;
-                text-align: center;
-            }
-        }
-
-    }
+  }
 }

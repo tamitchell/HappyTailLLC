@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+.navbar {
+    background-color: $muddy-brown;
+    color: $main-white; //    height: 50px;
+    min-height: 50px;
+    .navbar-brand img {
+        position: absolute;
+        top: 0%;
+        left: 43%;
+        transform: translate(-50, -50);
+        height: 128px;
+        width: 128px;
+        z-index: 1;
+
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        height: 100%;
+        padding-right: 4%;
+
+    }
+    a {
+        font: $sub-header;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: white;
+    }
+}

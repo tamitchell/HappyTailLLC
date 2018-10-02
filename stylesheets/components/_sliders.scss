@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+/*SLIDERS*/
+
+.banner-slide {
+    padding: 0;
+    height: 30em;
+    max-height: 50%;
+    overflow-y: hidden;
+    .banner-img {
+        height: 30em;
+        max-height: 50%;
+        overflow-y: hidden;
+    }
+    .banner-btn {
+        @include white-to-brown-btn();
+
+    }
+}
