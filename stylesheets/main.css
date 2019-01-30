@@ -480,7 +480,9 @@ a:hover {
 }
 
 .container-fluid.accordions {
-  margin: 3em 2em;
+  padding: 2em;
+  width: 100%;
+  border: 1px solid red;
 }
 
 .container-fluid.accordions .accordion-buttons {
@@ -506,13 +508,15 @@ a:hover {
   font-size: 3em;
   text-align: center;
   padding: 1em;
-  width: 50em;
+  width: 50vw;
+  min-width: 350px;
   max-width: 500px;
-  height: auto;
+  height: 300px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 19px;
   font-weight: lighter;
+  font-size: 3vmax;
 }
 
 .container-fluid.accordions .accordion-buttons .boarding {
