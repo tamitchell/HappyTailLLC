@@ -4,8 +4,6 @@
 //redo blog slider
 //blog dividers should appear
 //build contact us page
-//fix size of banner slider so that it's max-height is only 30%
-//mission statement image should always be on bottom
 //comment section disclosure statement should be left-aligned
 //what to expect section should have header"what to expect"
 //what to expect container should be diff colors(?) more appealing
@@ -85,16 +83,25 @@ a:hover {
 /*What To Expect Container Styling*/
 
 .container-fluid.expectations {
-  display: flex;    
+  display: flex;
 
   height: 100%;
   max-height: 700px;
   padding: 0;
+  position: relative;
   img {
     margin: 0 auto;
     width: 128px;
   }
+  h3 {
+    @include absolute-center();
+    top: 13%;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3vmax;
 
+    z-index: 1;
+  }
   .card {
     flex-basis: 100%;
     padding-top: 10em;
@@ -102,13 +109,16 @@ a:hover {
     height: auto;
     border: none;
     border-radius: 0;
+
+    h5 {
+      text-transform: uppercase;
+    }
   }
   .card:nth-of-type(1) {
-    background-color: #B8BAC3;
+    background-color: #b8bac3;
   }
   .card:nth-of-type(2) {
     background-color: rgba(227, 215, 206, 0.5);
-    
   }
   .card:nth-of-type(3) {
     background-color: rgba(52, 28, 23, 0.3);
@@ -139,6 +149,27 @@ a:hover {
     width: 264px;
     height: 264px;
   }
+  .disclosure {
+    overflow-x:visible;
+    text-align: left;
+    font-size: 8px;
+    margin-top: 5em;
+  }
+  .card {
+    border: none;
+  }
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 32px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 32px;
+  color: black;
+}
 }
 
 .container.questions {
@@ -152,8 +183,16 @@ a:hover {
       text-transform: uppercase;
     }
   }
-
+  section {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+  }
   @include cards();
+  .card {
+    border: none;
+  }
 }
 
 .services-header {
@@ -183,8 +222,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     .btn {
-        background-position: center;
-        background-size: cover;
+      background-position: center;
+      background-size: cover;
       margin: 0 0.3em 0.3em 0;
       font-size: 3em;
       text-align: center;

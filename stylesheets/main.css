@@ -286,11 +286,24 @@ a:hover {
   height: 100%;
   max-height: 700px;
   padding: 0;
+  position: relative;
 }
 
 .container-fluid.expectations img {
   margin: 0 auto;
   width: 128px;
+}
+
+.container-fluid.expectations h3 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 13%;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 3vmax;
+  z-index: 1;
 }
 
 .container-fluid.expectations .card {
@@ -303,8 +316,12 @@ a:hover {
   border-radius: 0;
 }
 
+.container-fluid.expectations .card h5 {
+  text-transform: uppercase;
+}
+
 .container-fluid.expectations .card:nth-of-type(1) {
-  background-color: #B8BAC3;
+  background-color: #b8bac3;
 }
 
 .container-fluid.expectations .card:nth-of-type(2) {
@@ -343,6 +360,29 @@ a:hover {
   height: 264px;
 }
 
+.container.testimonials .disclosure {
+  overflow-x: visible;
+  text-align: left;
+  font-size: 8px;
+  margin-top: 5em;
+}
+
+.container.testimonials .card {
+  border: none;
+}
+
+.container.testimonials .carousel-control-next-icon:after {
+  content: '>';
+  font-size: 32px;
+  color: black;
+}
+
+.container.testimonials .carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 32px;
+  color: black;
+}
+
 .container.questions {
   margin-top: 2em;
 }
@@ -356,6 +396,17 @@ a:hover {
 
 .container.questions .questions-call h1 {
   text-transform: uppercase;
+}
+
+.container.questions section {
+  width: 100%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container.questions .flex-wrapper-cards {
@@ -404,6 +455,10 @@ a:hover {
   padding: 0.3em;
   height: 64px;
   width: 64px;
+}
+
+.container.questions .card {
+  border: none;
 }
 
 .services-header img {
