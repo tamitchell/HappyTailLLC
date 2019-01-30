@@ -118,7 +118,7 @@
   height: auto;
 }
 
-.banner-slide .carousel-item .blog-caption {
+.banner-slide .carousel-item .blog-caption, .banner-slide .carousel-item .blog-caption2, .banner-slide .carousel-item .blog-caption3 {
   margin-top: 0;
   top: 0;
   min-height: 100%;
@@ -127,12 +127,12 @@
   padding: 0 4em;
 }
 
-.banner-slide .carousel-item .blog-caption span {
+.banner-slide .carousel-item .blog-caption span, .banner-slide .carousel-item .blog-caption2 span, .banner-slide .carousel-item .blog-caption3 span {
   width: 200px;
 }
 
-.banner-slide .carousel-item .blog-caption span h5 {
-  margin: 3em 0 1em 0;
+.banner-slide .carousel-item .blog-caption span h5, .banner-slide .carousel-item .blog-caption2 span h5, .banner-slide .carousel-item .blog-caption3 span h5 {
+  margin: 2em 0 1em 0;
   font-size: 3vmax;
   font-weight: 300;
   text-transform: uppercase;
@@ -140,15 +140,15 @@
   border-bottom: 1px solid white;
 }
 
-.banner-slide .carousel-item .blog-caption:nth-of-type(1) {
+.banner-slide .carousel-item .blog-caption {
   background-color: #DB9363;
 }
 
-.banner-slide .carousel-item .blog-caption:nth-of-type(2) {
+.banner-slide .carousel-item .blog-caption2 {
   background-color: #1B110C;
 }
 
-.banner-slide .carousel-item .blog-caption:nth-of-type(3) {
+.banner-slide .carousel-item .blog-caption3 {
   background-color: #ff694c;
 }
 

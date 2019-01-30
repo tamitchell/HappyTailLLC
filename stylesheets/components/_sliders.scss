@@ -32,7 +32,7 @@
       top: 10%;
       height: auto;
     }
-    .blog-caption {
+    .blog-caption, .blog-caption2, .blog-caption3 {
       margin-top: 0;
       top: 0;
       min-height: 100%;
@@ -42,7 +42,7 @@
       span {
         width: 200px;
         h5 {
-          margin: 3em 0 1em 0;
+          margin: 2em 0 1em 0;
           font-size: 3vmax;
           font-weight: 300;
           text-transform: uppercase;
@@ -51,13 +51,13 @@
         }
       }
     }
-    .blog-caption:nth-of-type(1) {
+    .blog-caption {
       background-color: $orange;
     }
-    .blog-caption:nth-of-type(2) {
+    .blog-caption2 {
       background-color: $muddy-brown;
     }
-    .blog-caption:nth-of-type(3) {
+    .blog-caption3 {
       background-color: #ff694c;
     }
 
