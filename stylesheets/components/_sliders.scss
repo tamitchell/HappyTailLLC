@@ -7,13 +7,37 @@
     height: 30em;
     max-height: 50%;
     overflow-y: hidden;
-    .banner-img {
-        height: 30em;
-        max-height: 50%;
-        overflow-y: hidden;
+    .carousel-item {
+        position: relative;
+        min-height: 30em;
+        padding: 0;
+        .banner-img, video {
+            position: absolute;
+            top: 0%;
+            height: 40em;
+            max-height: 100%;
+            overflow: hidden;
+        }
+        .banner-btn {
+            @include white-to-brown-btn();
+    
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 10%;
+            height: auto;
+        }
+        .carousel-caption:nth-of-type(1) {
+            margin-top:100px;
+            height: 40%;
+        }
     }
-    .banner-btn {
-        @include white-to-brown-btn();
+    .carousel-item:nth-of-type(1) {
+        border: 1px solid red;
+        video {
+            width: 100%    !important;
+            height: 100%   !important;
 
+        }
     }
 }

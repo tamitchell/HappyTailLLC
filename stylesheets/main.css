@@ -7,41 +7,56 @@
 /*Font-Stack*/
 /*Images and Sizing*/
 /*Colors*/
+/*Mixins*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 .navbar {
   background-color: #1B110C;
   color: #fff;
-  min-height: 50px;
+  height: 50px;
+  min-height: 100%;
+  padding: 0;
+  position: relative;
 }
 
 .navbar .navbar-brand img {
   position: absolute;
-  top: 0%;
-  left: 43%;
-  -webkit-transform: translate(-50, -50);
-          transform: translate(-50, -50);
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   height: 128px;
   width: 128px;
   z-index: 1;
 }
 
 .navbar ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  min-width: 100%;
+  display: table;
+  table-layout: fixed;
+  /* the magic dust that ensures equal width */
 }
 
 .navbar li {
-  height: 100%;
-  padding-right: 4%;
+  min-height: 100%;
+  display: table-cell;
+  text-align: center;
 }
 
-.navbar a {
+.navbar li:nth-of-type(3), .navbar li:nth-of-type(4), .navbar li:nth-of-type(7) {
+  text-align: left;
+}
+
+.navbar li:nth-of-type(5),
+.navbar li:nth-of-type(1) {
+  text-align: right;
+}
+
+.navbar li:nth-of-type(5) {
+  min-width: 170px;
+}
+
+.navbar a, .navbar .nav-link {
   font: 2em "Montserrat";
   font-size: 1em;
   text-transform: uppercase;
@@ -60,13 +75,21 @@
   overflow-y: hidden;
 }
 
-.banner-slide .banner-img {
-  height: 30em;
-  max-height: 50%;
-  overflow-y: hidden;
+.banner-slide .carousel-item {
+  position: relative;
+  min-height: 30em;
+  padding: 0;
 }
 
-.banner-slide .banner-btn {
+.banner-slide .carousel-item .banner-img, .banner-slide .carousel-item video {
+  position: absolute;
+  top: 0%;
+  height: 40em;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.banner-slide .carousel-item .banner-btn {
   margin-top: 3em;
   background-color: transparent;
   color: #fff;
@@ -74,14 +97,34 @@
   text-transform: uppercase;
 }
 
-.banner-slide .banner-btn:hover {
+.banner-slide .carousel-item .banner-btn:hover {
   background-color: #1B110C;
   border: 2px solid #1B110C;
 }
 
-.banner-slide .banner-btn a {
+.banner-slide .carousel-item .banner-btn a {
   text-decoration: none;
   color: white;
+}
+
+.banner-slide .carousel-item .carousel-caption {
+  position: absolute;
+  top: 10%;
+  height: auto;
+}
+
+.banner-slide .carousel-item .carousel-caption:nth-of-type(1) {
+  margin-top: 100px;
+  height: 40%;
+}
+
+.banner-slide .carousel-item:nth-of-type(1) {
+  border: 1px solid red;
+}
+
+.banner-slide .carousel-item:nth-of-type(1) video {
+  width: 100%    !important;
+  height: 100%   !important;
 }
 
 /*Font-Stack*/
@@ -204,7 +247,7 @@ a:hover {
 .mission-wrapper {
   background-image: url("/images/photography/wrinkly_puppy.jpeg");
   background-position: bottom right;
-  background-size: 70%;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 
@@ -223,8 +266,8 @@ a:hover {
 }
 
 .mission-wrapper .mission .satisfaction-logo {
-  width: 64px;
-  right: 1%;
+  width: 128px;
+  right: -10%;
   top: 4%;
 }
 
@@ -240,9 +283,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 100%;
+  max-height: 700px;
   padding: 0;
 }
 
@@ -252,11 +294,25 @@ a:hover {
 }
 
 .container-fluid.expectations .card {
-  padding-top: 1em;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-top: 10em;
   text-align: center;
-  width: 20em;
   height: auto;
+  border: none;
   border-radius: 0;
+}
+
+.container-fluid.expectations .card:nth-of-type(1) {
+  background-color: #B8BAC3;
+}
+
+.container-fluid.expectations .card:nth-of-type(2) {
+  background-color: rgba(227, 215, 206, 0.5);
+}
+
+.container-fluid.expectations .card:nth-of-type(3) {
+  background-color: rgba(52, 28, 23, 0.3);
 }
 
 /*Testimonials Styling*/

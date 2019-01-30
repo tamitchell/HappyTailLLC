@@ -56,7 +56,7 @@ a:hover {
 .mission-wrapper {
   background-image: url("/images/photography/wrinkly_puppy.jpeg");
   background-position: bottom right;
-  background-size: 70%;
+  background-size: 50%;
   background-repeat: no-repeat;
   .mission {
     position: relative;
@@ -69,8 +69,8 @@ a:hover {
       position: absolute;
     }
     .satisfaction-logo {
-      width: 64px;
-      right: 1%;
+      width: 128px;
+      right: -10%;
       top: 4%;
     }
     .mission-img {
@@ -85,8 +85,10 @@ a:hover {
 /*What To Expect Container Styling*/
 
 .container-fluid.expectations {
-  display: flex;
-  justify-content: center;
+  display: flex;    
+
+  height: 100%;
+  max-height: 700px;
   padding: 0;
   img {
     margin: 0 auto;
@@ -94,11 +96,22 @@ a:hover {
   }
 
   .card {
-    padding-top: 1em;
+    flex-basis: 100%;
+    padding-top: 10em;
     text-align: center;
-    width: 20em;
     height: auto;
+    border: none;
     border-radius: 0;
+  }
+  .card:nth-of-type(1) {
+    background-color: #B8BAC3;
+  }
+  .card:nth-of-type(2) {
+    background-color: rgba(227, 215, 206, 0.5);
+    
+  }
+  .card:nth-of-type(3) {
+    background-color: rgba(52, 28, 23, 0.3);
   }
 }
 
