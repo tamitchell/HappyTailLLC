@@ -13,8 +13,8 @@
 .navbar {
   background-color: #1B110C;
   color: #fff;
-  height: 50px;
-  min-height: 100%;
+  height: 100%;
+  min-height: 50px;
   padding: 0;
   position: relative;
 }
@@ -77,14 +77,19 @@
 
 .banner-slide .carousel-item {
   position: relative;
+  width: 100vw;
   min-height: 30em;
   padding: 0;
+  overflow: hidden;
 }
 
-.banner-slide .carousel-item .banner-img, .banner-slide .carousel-item video {
+.banner-slide .carousel-item .banner-img,
+.banner-slide .carousel-item .blog-img,
+.banner-slide .carousel-item video {
   position: absolute;
   top: 0%;
-  height: 40em;
+  height: 100%;
+  width: auto;
   max-height: 100%;
   overflow: hidden;
 }
@@ -113,18 +118,48 @@
   height: auto;
 }
 
-.banner-slide .carousel-item .carousel-caption:nth-of-type(1) {
+.banner-slide .carousel-item .blog-caption {
+  margin-top: 0;
+  top: 0;
+  min-height: 100%;
+  width: 50%;
+  left: 50%;
+  padding: 0 4em;
+}
+
+.banner-slide .carousel-item .blog-caption span {
+  width: 200px;
+}
+
+.banner-slide .carousel-item .blog-caption span h5 {
+  margin: 3em 0 1em 0;
+  font-size: 3vmax;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 51px;
+  border-bottom: 1px solid white;
+}
+
+.banner-slide .carousel-item .blog-caption:nth-of-type(1) {
+  background-color: #DB9363;
+}
+
+.banner-slide .carousel-item .blog-caption:nth-of-type(2) {
+  background-color: #1B110C;
+}
+
+.banner-slide .carousel-item .blog-caption:nth-of-type(3) {
+  background-color: #ff694c;
+}
+
+.banner-slide .carousel-item .home-slider-caption {
   margin-top: 100px;
   height: 40%;
 }
 
-.banner-slide .carousel-item:nth-of-type(1) {
-  border: 1px solid red;
-}
-
 .banner-slide .carousel-item:nth-of-type(1) video {
-  width: 100%    !important;
-  height: 100%   !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /*Font-Stack*/
@@ -159,6 +194,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .carousel-item .blog-img {
+    width: 100%;
+  }
   .meet-founder-container h1 {
     padding-top: 2em;
     padding-bottom: 1.5em;
@@ -511,7 +549,7 @@ a:hover {
   width: 50vw;
   min-width: 350px;
   max-width: 500px;
-  height: 300px;
+  height: 220px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 19px;

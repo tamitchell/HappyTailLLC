@@ -1,43 +1,75 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 /*SLIDERS*/
 
 .banner-slide {
+  padding: 0;
+  height: 30em;
+  max-height: 50%;
+  overflow-y: hidden;
+  .carousel-item {
+    position: relative;
+    width: 100vw;
+    min-height: 30em;
     padding: 0;
-    height: 30em;
-    max-height: 50%;
-    overflow-y: hidden;
-    .carousel-item {
-        position: relative;
-        min-height: 30em;
-        padding: 0;
-        .banner-img, video {
-            position: absolute;
-            top: 0%;
-            height: 40em;
-            max-height: 100%;
-            overflow: hidden;
-        }
-        .banner-btn {
-            @include white-to-brown-btn();
-    
-        }
-        .carousel-caption {
-            position: absolute;
-            top: 10%;
-            height: auto;
-        }
-        .carousel-caption:nth-of-type(1) {
-            margin-top:100px;
-            height: 40%;
-        }
+    overflow: hidden;
+    .banner-img,
+    .blog-img,
+    video {
+      position: absolute;
+      top: 0%;
+      height: 100%;
+      width: auto;
+      max-height: 100%;
+      overflow: hidden;
     }
-    .carousel-item:nth-of-type(1) {
-        border: 1px solid red;
-        video {
-            width: 100%    !important;
-            height: 100%   !important;
+    .banner-btn {
+      @include white-to-brown-btn();
+    }
 
-        }
+    .carousel-caption {
+      position: absolute;
+      top: 10%;
+      height: auto;
     }
+    .blog-caption {
+      margin-top: 0;
+      top: 0;
+      min-height: 100%;
+      width: 50%;
+      left: 50%;
+      padding: 0 4em;
+      span {
+        width: 200px;
+        h5 {
+          margin: 3em 0 1em 0;
+          font-size: 3vmax;
+          font-weight: 300;
+          text-transform: uppercase;
+          line-height: 51px;
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+    .blog-caption:nth-of-type(1) {
+      background-color: $orange;
+    }
+    .blog-caption:nth-of-type(2) {
+      background-color: $muddy-brown;
+    }
+    .blog-caption:nth-of-type(3) {
+      background-color: #ff694c;
+    }
+
+    .home-slider-caption {
+      margin-top: 100px;
+      height: 40%;
+    }
+  }
+  .carousel-item:nth-of-type(1) {
+    video {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
 }
