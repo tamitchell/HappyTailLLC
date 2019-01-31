@@ -71,7 +71,6 @@
 .banner-slide {
   padding: 0;
   height: 30em;
-  max-height: 50%;
   overflow-y: hidden;
 }
 
@@ -89,7 +88,6 @@
   position: absolute;
   top: 0%;
   height: 100%;
-  width: auto;
   max-height: 100%;
   overflow: hidden;
 }
@@ -193,7 +191,7 @@
   background-color: #DB9363;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 600px) {
   .navbar li {
     text-align: left;
     display: block;
@@ -201,8 +199,11 @@
   .navbar li a {
     text-align: left;
   }
-  .carousel-item .blog-img {
-    width: 100%;
+  .banner-slide .carousel-item .blog-caption,
+  .banner-slide .carousel-item .blog-caption2,
+  .banner-slide .carousel-item .blog-caption3 {
+    width: 100vw;
+    left: 0;
   }
   .meet-founder-container h1 {
     padding-top: 2em;
