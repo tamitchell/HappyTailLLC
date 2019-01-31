@@ -194,6 +194,13 @@
 }
 
 @media (max-width: 575.98px) {
+  .navbar li {
+    text-align: left;
+    display: block;
+  }
+  .navbar li a {
+    text-align: left;
+  }
   .carousel-item .blog-img {
     width: 100%;
   }
