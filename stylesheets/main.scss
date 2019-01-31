@@ -1,7 +1,9 @@
-//about image should appear
-//establishing a good business build out
-//build contact us page
-//style facebook iframe
+//added enformed.io email to form
+//test email form for send-a-message
+//change prices
+//make child div fill height of parent in contact us page
+//add remaining components to contact-us
+//find password to domain site
 
 @import "./components/mixins.scss";
 @import "./components/variables.scss";
@@ -144,7 +146,7 @@ a:hover {
     height: 264px;
   }
   .disclosure {
-    overflow-x:visible;
+    overflow-x: visible;
     text-align: left;
     font-size: 8px;
     margin-top: 5em;
@@ -152,18 +154,17 @@ a:hover {
   .card {
     border: none;
   }
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 32px;
-  color: black;
-}
+  .carousel-control-next-icon:after {
+    content: ">";
+    font-size: 32px;
+    color: black;
+  }
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 32px;
-  color: black;
-}
+  .carousel-control-prev-icon:after {
+    content: "<";
+    font-size: 32px;
+    color: black;
+  }
 }
 
 .container.questions {
@@ -321,28 +322,67 @@ a:hover {
 .meet-founder-container {
   h1 {
     padding-top: 2em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
     text-align: center;
     text-transform: uppercase;
     font-weight: 100;
   }
   .founder-img-container {
-    float: right;
-    width: 300px;
-    height: 300px;
-    margin-left: 1em;
-    margin-bottom: 3em;
-    overflow-x: hidden;
+    display: block;
+    margin: 0 auto;
+    width: 22vw;
+    height: 22vw !important;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
     img {
-      width: 400px;
-      height: 300px;
-    }
-    h5 {
-      padding: 1em;
-      text-align: center;
+      width: 100%;
+      height: 100%;
     }
   }
+  h5 {
+    padding: 1.5em;
+    text-align: center;
+    width: 100%;
+  }
 }
+
+.embed-responsive {
+  position: relative;
+  .framer {
+    @include absolute-center();
+    top: 50%;
+    width: 30%;
+  }
+}
+
+.call-to-action {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  align-items: stretch;
+  position: relative;
+  div {
+    flex-basis: 100%;
+  }
+  div:first-child {
+    position: relative;
+    h1 {
+      @include absolute-center();
+      top: 50%;
+      color: white;
+      font-size: 5vmax;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  div:nth-of-typ(2){
+    flex: 0 1 auto;
+    align-self: auto;
+  }}
 
 .company-values {
   padding: 1em;
