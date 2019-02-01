@@ -364,11 +364,19 @@ a:hover {
   align-content: stretch;
   align-items: stretch;
   position: relative;
+  h1 {
+    padding: 5em;
+  }
   div {
     flex-basis: 100%;
   }
   div:first-child {
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     h1 {
       @include absolute-center();
       top: 50%;
@@ -376,13 +384,17 @@ a:hover {
       font-size: 5vmax;
     }
     img {
+      flex-shrink: 0;
       width: 100%;
+      height: 100%;
     }
   }
-  div:nth-of-typ(2){
-    flex: 0 1 auto;
-    align-self: auto;
-  }}
+  div:nth-child(2) {
+    input {
+      max-width: 300px;
+    }
+  }
+}
 
 .company-values {
   padding: 1em;

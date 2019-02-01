@@ -166,21 +166,27 @@
   height: 100% !important;
 }
 
-.contact-slider {
+#contact-slider {
   width: 100%;
   min-height: 100%;
   background-color: #a2b7d8;
-  border: 3px solid blue;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.contact-slider .contact-slider-caption {
+#contact-slider h3 {
+  font-weight: 200;
   text-align: left;
-  width: 80%;
+}
+
+#contact-slider .contact-slider-caption {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
   min-height: 100%;
-  padding: 2em;
+  padding-top: 4em;
+  border: 1px solid purple;
 }
 
 /*Font-Stack*/
@@ -742,6 +748,10 @@ a:hover {
   position: relative;
 }
 
+.call-to-action h1 {
+  padding: 5em;
+}
+
 .call-to-action div {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -749,6 +759,17 @@ a:hover {
 
 .call-to-action div:first-child {
   position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 
 .call-to-action div:first-child h1 {
@@ -762,16 +783,14 @@ a:hover {
 }
 
 .call-to-action div:first-child img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 100%;
+  height: 100%;
 }
 
-.call-to-action div:nth-of-typ(2) {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+.call-to-action div:nth-child(2) input {
+  max-width: 300px;
 }
 
 .company-values {

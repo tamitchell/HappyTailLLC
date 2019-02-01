@@ -241,7 +241,7 @@
             alt="Teamwork. Dedication. Vision."
           />
         </div>
-        <div id="contact-slider" class="carousel slide" data-ride="carousel">
+        <div id="contact-slider" class="carousel slide" data-interval="false" data-ride="carousel">
           <div class="carousel-inner banner">
             <!--First Slide container START-->
             <div class="carousel-item contact-slider active">
@@ -261,6 +261,8 @@
                     quickly reach out to your preferred method of contact,
                     either by phone or by email.
                   </p>
+                  <p><a href="/files/Application to become a dog walker (2).docx" download>Application Form</a>
+                  </p>
                 </section>
               </div>
               <!--END First Slide caption-->
@@ -272,8 +274,8 @@
             <div class="carousel-item contact-slider">
               <!--Second Slide Caption-->
 
-              <div class="carousel-caption d-md-block">
-                <h2>Why Choose Us</h2>
+              <div class="carousel-caption contact-slider-caption d-md-block">
+                <h3>Join the Happy Tail Team!</h3>
 
                 <form action="/action_page.php" method="post">
                   <div class="form-group">
@@ -297,12 +299,17 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="inputPhoneNumber">Phone</label>
+                    <label for="inputPhoneNumber" class="sr-only">Phone</label>
                     <input
                       id="inputPhoneNumber"
                       type="text"
+                      class="form-control mb-2 mr-sm-2"
                       placeholder="(555) 555 5555"
                     />
+                  </div>
+                  <div class="form-group">
+                    <label for="application" class="sr-only">Upload your job application</label>
+                    <input type="file" class="form-control-file" id="application">
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
