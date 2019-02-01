@@ -22,7 +22,7 @@
 .navbar .navbar-brand img {
   position: absolute;
   top: 50px;
-  left: 50%;
+  left: 48%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 128px;
@@ -45,6 +45,7 @@
 
 .navbar li:nth-of-type(3), .navbar li:nth-of-type(4), .navbar li:nth-of-type(7) {
   text-align: left;
+  min-width: 50px;
 }
 
 .navbar li:nth-of-type(5),
@@ -53,7 +54,7 @@
 }
 
 .navbar li:nth-of-type(5) {
-  min-width: 170px;
+  min-width: 50px;
 }
 
 .navbar a, .navbar .nav-link {
@@ -196,6 +197,15 @@
 @media (max-width: 575.98px) {
   .carousel-item .blog-img {
     width: 100%;
+  }
+  .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
   }
   .meet-founder-container h1 {
     padding-top: 2em;

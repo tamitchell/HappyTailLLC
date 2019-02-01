@@ -5,6 +5,13 @@
         }
     }
 
+    .navbar {
+        ul {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+    }
+
     .meet-founder-container {
 
         h1 {
