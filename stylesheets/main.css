@@ -70,14 +70,14 @@
 /*SLIDERS*/
 .banner-slide {
   padding: 0;
-  height: 30em;
+  height: 40em;
   overflow-y: hidden;
 }
 
 .banner-slide .carousel-item {
   position: relative;
   width: 100%;
-  min-height: 30em;
+  height: 100%;
   padding: 0;
   overflow: hidden;
 }
@@ -108,12 +108,6 @@
 .banner-slide .carousel-item .banner-btn a {
   text-decoration: none;
   color: white;
-}
-
-.banner-slide .carousel-item .carousel-caption {
-  position: absolute;
-  top: 10%;
-  height: auto;
 }
 
 .banner-slide .carousel-item .blog-caption,
@@ -166,29 +160,6 @@
   height: 100% !important;
 }
 
-#contact-slider {
-  width: 100%;
-  min-height: 100%;
-  background-color: #a2b7d8;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-#contact-slider h3 {
-  font-weight: 200;
-  text-align: left;
-}
-
-#contact-slider .contact-slider-caption {
-  text-align: left;
-  width: 100%;
-  max-width: 500px;
-  min-height: 100%;
-  padding-top: 4em;
-  border: 1px solid purple;
-}
-
 /*Font-Stack*/
 /*Images and Sizing*/
 /*Colors*/
@@ -203,21 +174,21 @@
 .second-divider {
   margin: 0;
   height: 20px;
-  background-color: #DB9363;
+  background-color: #DBD0C8;
   border: none;
 }
 
 .third-divider {
   margin: 0;
   height: 20px;
-  background-color: #DB9363;
+  background-color: #a2b7d8;
   border: none;
 }
 
 .fourth-divider {
   margin: 0;
   height: 20px;
-  background-color: #DB9363;
+  background-color: #9E5E41;
 }
 
 @media (max-width: 600px) {
@@ -240,6 +211,16 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 100;
+  }
+}
+
+@media (max-width: 990px) {
+  .navbar li {
+    text-align: left;
+    display: block;
+  }
+  .navbar li a {
+    text-align: left;
   }
 }
 
@@ -292,6 +273,14 @@ body {
       -ms-flex: 1;
           flex: 1;
   padding-bottom: 00px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 1em;
+  font-size: 3.5vmax;
 }
 
 a:hover {
@@ -537,7 +526,6 @@ a:hover {
 .container-fluid.accordions {
   padding: 2em;
   width: 100%;
-  border: 1px solid red;
 }
 
 .container-fluid.accordions .accordion-buttons {
@@ -746,6 +734,8 @@ a:hover {
       -ms-flex-align: stretch;
           align-items: stretch;
   position: relative;
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .call-to-action h1 {
@@ -757,9 +747,13 @@ a:hover {
       flex-basis: 100%;
 }
 
-.call-to-action div:first-child {
-  position: relative;
+.call-to-action #contact-slider {
   width: 100%;
+  min-height: 500px;
+  background-color: #a2b7d8;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,7 +763,37 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
+}
+
+.call-to-action #contact-slider .contact-slider {
+  position: relative;
+  margin: 0 auto;
+  min-width: 80%;
+  max-width: 300px;
+  height: 100%;
+}
+
+.call-to-action #contact-slider h3 {
+  font-weight: 200;
+  text-align: center;
+  padding: 2em 0 0.5em 0;
+}
+
+.call-to-action #contact-slider .contact-slider-caption {
+  bottom: 0px;
+  left: 0;
+  text-align: left;
+}
+
+.call-to-action #contact-slider .contact-slider-caption form {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.call-to-action div:first-child {
+  position: relative;
+  height: 100%;
 }
 
 .call-to-action div:first-child h1 {
@@ -777,16 +801,20 @@ a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 50%;
+  top: 250px;
   color: white;
   font-size: 5vmax;
+  z-index: 1;
 }
 
 .call-to-action div:first-child img {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 200px;
+  max-width: 900px;
+  max-height: 900px;
 }
 
 .call-to-action div:nth-child(2) input {
