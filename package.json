@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "posthtml-expressions": "^1.1.0"
+  },
+  "name": "HappyTailLLC",
+  "version": "1.0.0",
+  "description": "client site",
+  "main": "index.html",
+  "repository": "git@github.com:tamitchell/HappyTailLLC.git",
+  "author": "Tasha <tamitchell14@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn parcel *.html",
+    "build": "NODE_ENV=prod parcel build --public-url ./ index.html"
+  }
+}

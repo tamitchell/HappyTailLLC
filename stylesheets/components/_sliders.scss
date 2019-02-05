@@ -4,12 +4,12 @@
 
 .banner-slide {
   padding: 0;
-  height: 30em;
+  height: 40em;
   overflow-y: hidden;
   .carousel-item {
     position: relative;
     width: 100%;
-    min-height: 30em;
+    height: 100%;
     padding: 0;
     overflow: hidden;
     .banner-img,
@@ -25,11 +25,11 @@
       @include white-to-brown-btn();
     }
 
-    .carousel-caption {
-      position: absolute;
-      top: 10%;
-      height: auto;
-    }
+    // .carousel-caption {
+    //   position: absolute;
+    //   top: 10%;
+    //   height: auto;
+    // }
     .blog-caption,
     .blog-caption2,
     .blog-caption3 {
@@ -71,23 +71,5 @@
       width: 100% !important;
       height: 100% !important;
     }
-  }
-}
-#contact-slider {
-  width: 100%;
-  min-height: 100%;
-  background-color: $babyblue;
-  flex-grow: 1;
-  h3 {
-    font-weight: 200;
-    text-align: left;
-  }
-  .contact-slider-caption {
-    text-align: left;
-    width: 100%;
-    max-width: 500px;
-    min-height: 100%;
-    padding-top: 4em;
-    border: 1px solid purple;
   }
 }

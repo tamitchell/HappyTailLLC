@@ -84,51 +84,82 @@
             <table class="table pricing table-responsive">
                 <caption>List of Pricing and Conditionals </caption>
                 <thead>
-                    <tr>
-                        <th scope="col">Conditionals</th>
-                        <th scope="col">Duration</th>
-                        <th scope="col">Requirements/Additional features</th>
-                        <th scope="col">Cost</th>
-                    </tr>
+
+    <th scope="col"></th>
+    <th scope="col">Duration</th>
+    <th scope="col">Condition</th>
+    <th scope="col">Cost</th>
+  </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">Private Pet Walk (1 pet per walk)</th>
-                        <td>30 minutes</td>
-                        <td>Must be sceduled for at least 3 times or more per week</td>
-                        <td>$15</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Multi Pet Price(for owners of more than 1 dog/cat. Maximum of three pets per walk)</th>
-                        <td>30 minutes</td>
-                        <td>No requirement</td>
-                        <td>$7.50 per dog</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Group of Three(Walk will occur in the same neighborhood)</th>
-                        <td>30 minutes</td>
-                        <td>Must be sceduled for at least 3 times or more per week</td>
-                        <td>$15</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Dog Boarding</th>
-                        <td>1 day</td>
-                        <td>Pet Taxi! Included (Pick up and drop off FREE!)</td>
-                        <td>$40</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Pet Sitting (Extra fee for each pet)</th>
-                        <td>Negotiable</td>
-                        <td>Must have at least 3 visits or more per week</td>
-                        <td>$15</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Group of Three(Walk will occur in the same neighborhood)</th>
-                        <td>30 minutes</td>
-                        <td>Must be sceduled for at least 3 times or more per week</td>
-                        <td>$15</td>
-                    </tr>
-                </tbody>
+                <tr>
+  <tr>
+    <td rowspan="3" scope="row">Private Pet Walk<br>1 pet per walk</td>
+    <td>30 minutes</td>
+    <td>*if scheduled for 3 times or more per week</td>
+    <td>$15</td>
+  </tr>
+  <tr>
+    <td>45 minutes</td>
+    <td></td>
+    <td>$20</td>
+  </tr>
+  <tr>
+    <td>60 minutes</td>
+    <td></td>
+    <td>$25</td>
+  </tr>
+  <tr>
+    <td scope="row">Multi-Pet Price<br>For owners of more than 1 dog/cat. Maximum of three pets per walk</td>
+    <td></td>
+    <td>$7.50 extra per dog per walk</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="3" scope="row">GROUP OF 3<br>Walk will occur in the same neighborhood</td>
+    <td>30 minutes</td>
+    <td></td>
+    <td>$12.50 per dog</td>
+  </tr>
+  <tr>
+    <td>45 minutes</td>
+    <td></td>
+    <td>$17.50 per dog</td>
+  </tr>
+  <tr>
+    <td>60 minutes</td>
+    <td></td>
+    <td>$22.50 per dog</td>
+  </tr>
+  <tr>
+    <td scope="row">DOG BOARDING</td>
+    <td>1 day</td>
+    <td>Pet Taxi! Included(Pick up and drop off FREE!)</td>
+    <td>$40</td>
+  </tr>
+  <tr>
+    <td rowspan="3" scope="row">PET SITTING<br>Extra fee for each pet</td>
+    <td></td>
+    <td>3 visits or more per week</td>
+    <td>$15</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>2x a week</td>
+    <td>$18</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>1x a week</td>
+    <td>$20</td>
+  </tr>
+  <tr>
+    <td scope="row">SPECIALTY SERVICES</td>
+    <td></td>
+    <td>Prices available upon request</td>
+    <td></td>
+  </tr>
+  </tbody>
             </table>
 
 
@@ -228,47 +259,58 @@
               </button>
     
               <div class="collapse accordion-content" id="sendMessage">
-                <form action="/action_page.php" method="post">
+                <form action="https://www.enformed.io/oizmqt5h" method="POST">
                   <div class="form-group">
-                    <label for="formInputName" class="sr-only">Name</label>
+                    <label for="Full Name" class="sr-only">Name</label>
                     <input
-                      id="formInputName"
+                      name="Full Name"
                       type="text"
                       class="form-control mb-2 mr-sm-2"
                       placeholder="Full Name"
+                      required
+                      aria-required="true"
                     />
                   </div>
-    
+      
                   <div class="form-group">
-                    <label for="inputEmail" class="sr-only">Email</label>
+                    <label for="Email" class="sr-only">Email</label>
                     <input
-                      id="inputEmail"
+                      name="Email"
                       type="email"
                       class="form-control mb-2 mr-sm-2"
                       placeholder="Email"
+                      required
+                      aria-required="true"
                     />
                   </div>
-    
+      
                   <div class="form-group">
-                    <label for="inputPhoneNumber">Phone</label>
+                    <label for="Phone Number">Phone</label>
                     <input
-                      id="inputPhoneNumber"
-                      type="text"
+                      name="Phone Number"
+                      type="tel"
                       placeholder="(555) 555 5555"
+                      required
+                      aria-required="true"
                     />
                   </div>
-    
+      
                   <div class="form-group">
-                    <label for="inputMessage">Message</label>
+                    <label for="Message">Message</label>
                     <textarea
                       class="form-control"
-                      id="inputMessage"
+                      name="Message"
                       rows="3"
+                      required
+                      aria-required="true"
                     ></textarea>
-    
+                    <input type="hidden" name="*redirect" value="http://happytailva.com/redirect.html" />
+                    <input type="hidden" name="*default_email" value="enformed@enformed.io" />
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
+      
                 </form>
+      
               </div>
             </div>
     

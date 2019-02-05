@@ -82,7 +82,7 @@
       <div class="container testimonials contact-header">
         <h1>Contact Us</h1>
 
-        <h4>Hours of Operation</h4>
+        <h4 style="margin-top: 3em;">Hours of Operation</h4>
         <p>
           MON - SUN <br />
           <br />
@@ -177,60 +177,71 @@
           </button>
 
           <div class="collapse accordion-content" id="sendMessage">
-            <form action="/action_page.php" method="post">
-              <div class="form-group">
-                <label for="formInputName" class="sr-only">Name</label>
-                <input
-                  id="formInputName"
-                  type="text"
-                  class="form-control mb-2 mr-sm-2"
-                  placeholder="Full Name"
-                />
-              </div>
+            <div class="form-group">
+              <label for="Full Name" class="sr-only">Name</label>
+              <input
+                name="Full Name"
+                type="text"
+                class="form-control mb-2 mr-sm-2"
+                placeholder="Full Name"
+                required
+                aria-required="true"
+              />
+            </div>
 
-              <div class="form-group">
-                <label for="inputEmail" class="sr-only">Email</label>
-                <input
-                  id="inputEmail"
-                  type="email"
-                  class="form-control mb-2 mr-sm-2"
-                  placeholder="Email"
-                />
-              </div>
+            <div class="form-group">
+              <label for="Email" class="sr-only">Email</label>
+              <input
+                name="Email"
+                type="email"
+                class="form-control mb-2 mr-sm-2"
+                placeholder="Email"
+                required
+                aria-required="true"
+              />
+            </div>
 
-              <div class="form-group">
-                <label for="inputPhoneNumber">Phone</label>
-                <input
-                  id="inputPhoneNumber"
-                  type="text"
-                  placeholder="(555) 555 5555"
-                />
-              </div>
+            <div class="form-group">
+              <label for="Phone Number">Phone</label>
+              <input
+                name="Phone Number"
+                type="tel"
+                placeholder="(555) 555 5555"
+                required
+                aria-required="true"
+              />
+            </div>
 
-              <div class="form-group">
-                <label for="inputMessage">Message</label>
-                <textarea
-                  class="form-control"
-                  id="inputMessage"
-                  rows="3"
-                ></textarea>
+            <div class="form-group">
+              <label for="Message">Message</label>
+              <textarea
+                class="form-control"
+                name="Message"
+                rows="3"
+                required
+                aria-required="true"
+              ></textarea>
+              <input type="hidden" name="*default_email" value="enformed@enformed.io" />
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
+          </form>
           </div>
         </div>
       </div>
       <!--END Contact Icons-->
 
       <!--START Mini Divider-->
-      <hr class="third-divider" />
+      <hr style="margin-top: 4em;"class="first-divider" />
       <!--END Mini divider-->
 
       <h1>Join Us!</h1>
 
+       <!--START Mini Divider-->
+       <hr class="third-divider" />
+       <!--END Mini divider-->
       <div class="container-fluid call-to-action">
-        <div>
+        <div class="team-value-div d-none d-md-block">
           <h1>
             Teamwork. <br />
             Dedication. <br />
@@ -246,7 +257,7 @@
             <!--First Slide container START-->
             <div class="carousel-item contact-slider active">
               <!--First Slide caption-->
-              <div class="carousel-caption contact-slider-caption d-md-block">
+              <div class="carousel-caption contact-slider-caption">
                 <h3>Want to be a Happy Tail LLC Walker?</h3>
                 <section>
                   <p>
@@ -274,43 +285,50 @@
             <div class="carousel-item contact-slider">
               <!--Second Slide Caption-->
 
-              <div class="carousel-caption contact-slider-caption d-md-block">
+              <div class="carousel-caption contact-slider-caption">
                 <h3>Join the Happy Tail Team!</h3>
 
-                <form action="/action_page.php" method="post">
+                <form action="https://www.enformed.io/oizmqt5h" method="post">
                   <div class="form-group">
-                    <label for="formInputName" class="sr-only">Name</label>
+                    <label for="Full Name" class="sr-only">Name</label>
                     <input
-                      id="formInputName"
+                      name="Full Name"
                       type="text"
                       class="form-control mb-2 mr-sm-2"
                       placeholder="Full Name"
+                      required
+                      aria-required="true"
                     />
                   </div>
-
+      
                   <div class="form-group">
-                    <label for="inputEmail" class="sr-only">Email</label>
+                    <label for="Email" class="sr-only">Email</label>
                     <input
-                      id="inputEmail"
+                      name="Email"
                       type="email"
                       class="form-control mb-2 mr-sm-2"
                       placeholder="Email"
+                      required
+                      aria-required="true"
                     />
                   </div>
-
+      
                   <div class="form-group">
-                    <label for="inputPhoneNumber" class="sr-only">Phone</label>
+                    <label for="Phone Number">Phone</label>
                     <input
-                      id="inputPhoneNumber"
-                      type="text"
-                      class="form-control mb-2 mr-sm-2"
+                      name="Phone Number"
+                      type="tel"
                       placeholder="(555) 555 5555"
+                      required
+                      aria-required="true"
                     />
                   </div>
                   <div class="form-group">
-                    <label for="application" class="sr-only">Upload your job application</label>
+                    <label for="application">Upload your job application here</label>
                     <input type="file" class="form-control-file" id="application">
                   </div>
+                  <input type="hidden" name="*redirect" value="http://happytailva.com/redirect.html" />
+                  <input type="hidden" name="*default_email" value="enformed@enformed.io" />
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>
@@ -345,6 +363,16 @@
           <!--END Slide-->
         </div>
       </div>
+       <!--START Mini Divider-->
+       <hr class="third-divider" />
+       <!--END Mini divider-->
+
+      <img
+      src="images/photography/dog_looking_forward.jpeg"
+      class="img-fluid question"
+      alt="chocolate labrador looking forward"
+    />
+
     </main>
 
     <!--START Page Footer-->

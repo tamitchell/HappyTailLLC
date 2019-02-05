@@ -1,8 +1,6 @@
 //added enformed.io email to form
 //test email form for send-a-message
 //change prices
-//make child div fill height of parent in contact us page
-//add remaining components to contact-us
 //find password to domain site
 
 @import "./components/mixins.scss";
@@ -11,6 +9,7 @@
 @import "./components/sliders.scss";
 @import "./components/dividers.scss";
 @import "./components/media_queries.scss";
+@import "./components/table";
 
 /*Buttons*/
 
@@ -39,6 +38,14 @@ body {
 .main-content {
   flex: 1;
   padding-bottom: 00px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 1em;
+  font-size: 3.5vmax;
 }
 
 a:hover {
@@ -211,7 +218,6 @@ a:hover {
 .container-fluid.accordions {
   padding: 2em;
   width: 100%;
-  border: 1px solid red;
   .accordion-buttons {
     display: flex;
     flex-flow: row wrap;
@@ -364,29 +370,63 @@ a:hover {
   align-content: stretch;
   align-items: stretch;
   position: relative;
+  max-height: 500px;
+  overflow: hidden;
+
   h1 {
     padding: 5em;
   }
   div {
     flex-basis: 100%;
   }
-  div:first-child {
-    position: relative;
+  #contact-slider {
     width: 100%;
+    min-height: 500px;
+    background-color: $babyblue;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    .contact-slider {
+      position: relative;
+      margin: 0 auto;
+      min-width: 80%;
+      max-width: 300px;
+      height: 100%;
+    }
+    h3 {
+      font-weight: 200;
+      text-align: center;
+      padding: 2em 0 0.5em 0;
+    }
+    .contact-slider-caption {
+      bottom: 0px;
+      left: 0;
+      text-align: left;
+      form {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+      }
+    }
+  }
+  
+  div:first-child {
+    position: relative;
+    height: 100%;
+    // overflow: hidden;
     h1 {
       @include absolute-center();
-      top: 50%;
+      top: 250px;
       color: white;
       font-size: 5vmax;
+      z-index: 1;
     }
     img {
-      flex-shrink: 0;
-      width: 100%;
-      height: 100%;
+      @include absolute-center();
+      top: 200px;
+      max-width: 900px;
+      max-height: 900px;
     }
   }
   div:nth-child(2) {

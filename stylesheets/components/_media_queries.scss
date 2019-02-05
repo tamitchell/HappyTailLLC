@@ -30,16 +30,14 @@
   }
 }
 
-// @media (max-width: 400px) {
-//   .banner-slide .carousel-item {
-//     .blog-caption {
-//         border: 1px solid green;
-//         background-color:transparent;
-//         background-image: url('./images/photography/blog-slide1-cat.jpg');
-//         background-size: cover;
-//     }
-//     .blog-caption2,
-//     .blog-caption3 {
-//     }
-//   }
-// }
+@media (max-width: 990px) {
+  .navbar {
+    li {
+      text-align: left;
+      display: block;
+      a {
+        text-align: left;
+      }
+    }
+  }
+}
