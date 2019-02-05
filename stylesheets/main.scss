@@ -70,8 +70,8 @@ a:hover {
       position: absolute;
     }
     .satisfaction-logo {
-      width: 128px;
-      right: -10%;
+      width: 110px;
+      right: 0;
       top: 4%;
     }
     .mission-img {
@@ -383,10 +383,10 @@ a:hover {
     width: 100%;
     min-height: 500px;
     background-color: $babyblue;
-    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     .contact-slider {
       position: relative;
       margin: 0 auto;
@@ -414,7 +414,6 @@ a:hover {
   div:first-child {
     position: relative;
     height: 100%;
-    // overflow: hidden;
     h1 {
       @include absolute-center();
       top: 250px;

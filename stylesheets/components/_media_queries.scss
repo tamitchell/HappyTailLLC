@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navbar {
     li {
       text-align: left;
@@ -9,14 +9,17 @@
     }
   }
 
-  .banner-slide .carousel-item {
+  #blogSlider {
+    height: 30vh;
+  }
+
     .blog-caption,
     .blog-caption2,
     .blog-caption3 {
       width: 100vw;
       left: 0;
     }
-  }
+  
 
   .meet-founder-container {
     h1 {
