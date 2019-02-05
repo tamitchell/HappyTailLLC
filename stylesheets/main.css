@@ -10,6 +10,7 @@
 /*Mixins*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 .navbar {
   background-color: #1B110C;
   color: #fff;
@@ -68,97 +69,29 @@
 /*Font-Stack*/
 /*Images and Sizing*/
 /*Colors*/
+/*Mixins*/
 /*SLIDERS*/
 .banner-slide {
+  position: relative;
   padding: 0;
-  height: 40em;
+  height: 80vh;
   overflow-y: hidden;
 }
 
-.banner-slide .carousel-item {
+.banner-slide .carousel-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  overflow: hidden;
 }
 
-.banner-slide .carousel-item .banner-img,
-.banner-slide .carousel-item .blog-img,
-.banner-slide .carousel-item video {
+.banner-slide video {
   position: absolute;
-  top: 0%;
-  height: 100%;
-  max-height: 100%;
-  overflow: hidden;
-}
-
-.banner-slide .carousel-item .banner-btn {
-  margin-top: 3em;
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid white;
-  text-transform: uppercase;
-}
-
-.banner-slide .carousel-item .banner-btn:hover {
-  background-color: #1B110C;
-  border: 2px solid #1B110C;
-}
-
-.banner-slide .carousel-item .banner-btn a {
-  text-decoration: none;
-  color: white;
-}
-
-.banner-slide .carousel-item .blog-caption,
-.banner-slide .carousel-item .blog-caption2,
-.banner-slide .carousel-item .blog-caption3 {
-  margin-top: 0;
-  top: 0;
-  min-height: 100%;
-  width: 50%;
   left: 50%;
-  padding: 0 4em;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 100%;
 }
 
-.banner-slide .carousel-item .blog-caption span,
-.banner-slide .carousel-item .blog-caption2 span,
-.banner-slide .carousel-item .blog-caption3 span {
-  width: 200px;
-}
-
-.banner-slide .carousel-item .blog-caption span h5,
-.banner-slide .carousel-item .blog-caption2 span h5,
-.banner-slide .carousel-item .blog-caption3 span h5 {
-  margin: 2em 0 1em 0;
-  font-size: 3vmax;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 51px;
-  border-bottom: 1px solid white;
-}
-
-.banner-slide .carousel-item .blog-caption {
-  background-color: #DB9363;
-}
-
-.banner-slide .carousel-item .blog-caption2 {
-  background-color: #1B110C;
-}
-
-.banner-slide .carousel-item .blog-caption3 {
-  background-color: #ff694c;
-}
-
-.banner-slide .carousel-item .home-slider-caption {
-  margin-top: 100px;
-  height: 40%;
-}
-
-.banner-slide .carousel-item:nth-of-type(1) video {
-  width: 100% !important;
-  height: 100% !important;
+.banner-slide img {
+  width: 100%;
 }
 
 /*Font-Stack*/
@@ -223,6 +156,37 @@
   .navbar li a {
     text-align: left;
   }
+}
+
+/*Font-Stack*/
+/*Images and Sizing*/
+/*Colors*/
+.pricing {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing th {
+  font-weight: 300;
+  font-size: 2vw;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+.pricing td[scope=row] {
+  text-align: left;
+  font-size: 2.5vmin;
+  color: #1B110C;
+  text-transform: uppercase;
+}
+
+.pricing td[scope=row] p {
+  text-transform: none;
+  font-style: italic;
+  font-size: 1.5vmax;
+  color: #DB9363;
 }
 
 /*Buttons*/
