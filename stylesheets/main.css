@@ -275,14 +275,12 @@
 
 .pricing th {
   font-weight: 300;
-  font-size: 2vw;
   text-transform: uppercase;
   padding: 30px;
 }
 
 .pricing td[scope=row] {
   text-align: left;
-  font-size: 2.5vmin;
   color: #1B110C;
   text-transform: uppercase;
 }
@@ -290,7 +288,7 @@
 .pricing td[scope=row] p {
   text-transform: none;
   font-style: italic;
-  font-size: 1.5vmax;
+  font-size: calc(8px * 4vw);
   color: #DB9363;
 }
 

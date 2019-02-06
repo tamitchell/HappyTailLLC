@@ -7,19 +7,17 @@
     text-align: center;
     th {
         font-weight: 300;
-        font-size: 2vw;
         text-transform: uppercase;
         padding: 30px;
     }    
     td[scope=row] {
         text-align: left;
-        font-size: 2.5vmin;
         color: $muddy-brown;
         text-transform: uppercase;
         p {
             text-transform: none;
             font-style: italic;
-            font-size: 1.5vmax;
+            font-size: calc(8px * 4vw);
             color: $orange;
         }
     }
