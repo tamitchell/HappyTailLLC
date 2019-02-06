@@ -23,9 +23,10 @@
 .slider-item {
   // position: relative;
   height: 100% !important;
+  @include absolute-center();
 }
 .slider-caption {
-  max-width: 60%;
+  max-width: 100%;
   top: -150px;
 }
 }
@@ -65,4 +66,5 @@
       }
 .banner-btn {
   @include white-to-brown-btn();
+  @include absolute-center();
 }
