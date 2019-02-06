@@ -9,9 +9,17 @@
     }
   }
 
+  .expectations {
+    flex-flow: row wrap;
+    h3 {
+      top: -13%;
+    }
+  }
+
   #blogSlider {
     height: 30vh;
   }
+
 
     .blog-caption,
     .blog-caption2,

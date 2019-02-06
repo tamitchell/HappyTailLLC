@@ -217,6 +217,15 @@
   .navbar li a {
     text-align: left;
   }
+  .expectations {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .expectations h3 {
+    top: -13%;
+  }
   #blogSlider {
     height: 30vh;
   }
@@ -401,6 +410,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 3vmax;
+  text-align: center;
   z-index: 1;
 }
 
@@ -505,6 +515,10 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .container.questions .flex-wrapper-cards {
@@ -520,6 +534,7 @@ a:hover {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  flex-flow: row wrap;
   width: 100%;
   margin-bottom: 5em;
 }
@@ -556,7 +571,7 @@ a:hover {
 }
 
 .container.questions .card {
-  border: none;
+  height: auto;
 }
 
 .services-header img {
