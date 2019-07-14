@@ -1,0 +1,49 @@
+
+.header {
+  padding-top: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.date {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.name {
+  padding-top: 10px;
+}
+
+.expand-width {
+    min-width: 100%;
+}
+
+.dash {
+  display: inline-block;
+  width: 50px;
+  border-top: 2px solid #bb0a1a;
+}
+
+.img-hero {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.list-of-symptoms {
+margin-left: 4em;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}

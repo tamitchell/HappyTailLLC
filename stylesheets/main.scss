@@ -8,6 +8,8 @@
 @import "./components/dividers.scss";
 @import "./components/media_queries.scss";
 @import "./components/table";
+@import "./components/blog_posts.scss";
+@import "./components/blog_page.scss";
 
 /*Buttons*/
 
@@ -84,9 +86,8 @@ a:hover {
   position: relative;
   img {
     margin: 0 auto;
-    width: 50%;
-    min-width:64px;
-    max-width: 128px;
+     border-radius: 50%;
+    width: 25%;
   }
   h3 {
     @include absolute-center();
