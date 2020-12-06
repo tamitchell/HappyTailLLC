@@ -15,16 +15,36 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
       backgroundColor: "#1B110C",
       color: "white",
-      minHeight: "20%",
-      border: "1px solid red",
+      padding: "20px",
+      minHeight: "50px",
+      display: "flex",
+      flexFlow: "row nowrap",
+      justifyContent: "space-evenly"
     }, 
     navigationLeft: {
+      padding: "0 3%",
+      width: "30%"
 
+    },
+    navigationRight: {
+      padding: "0 3%",
+      width: "30%"
+
+    },
+    navLink: {
+      padding: "0 5%",
+      margin: "0 20px",
+      color: "white",
+      textDecoration: "none",
+      textTransform: "uppercase"
+    },
+    placeholder: {
+      width: "30%"
     },
     logo: {
         position: "absolute",
-        width: "30%",
-        top: "100%",
+        width: "10%",
+        top: "120%",
         left: "50%",
         transform: "translate(-50%, -50%)",    }
   }));
@@ -32,18 +52,21 @@ const useStyles = makeStyles((theme) => ({
 const Navigation = () => {
     const classes = useStyles();
     return (
-        <Container className={classes.container}>
-            <div>
-            <Link to="/">Home</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/pricing">Pricing</Link>
+        <Container 
+        maxWidth={false} 
+        className={classes.container}
+        >
+            <div className={classes.navigationLeft}>
+            <Link className={classes.navLink} to="/">Home</Link>
+            <Link className={classes.navLink} to="/services">Services</Link>
+            <Link className={classes.navLink} to="/pricing">Pricing</Link>
             </div>
-            <p>Placeholder</p>
-            <img className={classes.logo} src={logo} />
-            <div>
-            <Link to="/blog">Blog</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact Us</Link>
+            <div className={classes.placeholder} aria-hidden="true">Placeholder</div>
+            <img className={classes.logo} src={logo} alt="Navigate to Main Page"/>
+            <div className={classes.navigationRight}>
+            <Link className={classes.navLink} to="/blog">Blog</Link>
+            <Link className={classes.navLink} to="/about">About</Link>
+            <Link className={classes.navLink} to="/contact">Contact Us</Link>
             </div>
 
         </Container>

@@ -6,7 +6,7 @@ import HomePage from "./pages/home";
 import Navigation from "./components/Navigation";
 function App() {
   return (
-    <div>
+    <div className="app">
       <Router>
       <Navigation/>
       <Switch>

@@ -7,10 +7,12 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.3.0",
+    "material-auto-rotating-carousel": "^3.0.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-swipeable-views": "^0.13.9",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
