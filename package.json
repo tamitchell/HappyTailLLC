@@ -12,5 +12,8 @@
   "scripts": {
     "start": "yarn parcel *.html",
     "build": "NODE_ENV=prod parcel build --public-url ./ index.html"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
   }
 }
