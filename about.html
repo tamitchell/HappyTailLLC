@@ -296,6 +296,7 @@
                 name="Phone Number"
                 type="tel"
                 placeholder="(555) 555 5555"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 required
                 aria-required="true"
               />
@@ -327,17 +328,10 @@
     <div class="container testimonials">
       <h1>Testimonials</h1>
 
-      <h3>Check us out on Facebook!</h3>
+      <h3>Check us out on <a href="https://www.facebook.com/happytailva/">Facebook</a> and <a href="">Instagram!</a></h3>
 
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe
-          class="framer"
-          src="https://www.facebook.com/pg/happytailva/reviews/?ref=page_internal"
-          scrolling="yes"
-          frameborder="0"
-          allowTransparency="true"
-          allow="encrypted-media"
-        ></iframe>
+        <iframe class="framer" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Fhappytailva%2Freviews%2F%3Fref%3Dpage_internal&tabs=reviews&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
     </div>
 
@@ -350,12 +344,13 @@
         </div>
         <!-- Copyright -->
       </footer>
+
       
+  </body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="Uu4Fde9K"></script>
 
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -371,5 +366,4 @@
       integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
       crossorigin="anonymous"
     ></script>
-  </body>
 </html>
