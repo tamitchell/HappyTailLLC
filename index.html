@@ -153,8 +153,8 @@
 
                 <p>
                   Main location <br />
-                  3580 Ellery Circle <br />
-                  Falls Church, VA 22041 <br />
+                  King St<br />
+                Alexandria VA
 
                   <br />We only provide services in the following areas <br />
 
@@ -322,82 +322,17 @@
           class="carousel slide"
           data-ride="carousel"
         >
-          <div class="carousel-inner">
             <!--START First comment-->
-            <div class="carousel-item active">
-              <div class="card testimonial">
-                <img
-                  src="images/Misc/brycepic.jpg"
-                  class="comment card-img-top rounded-circle"
-                  alt="Smiling brown haired man next to pug"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Bryce</h5>
-                  <img
-                    src="images/ICONS/5_stars.PNG"
-                    alt="five-star comment rating"
-                  />
-                  <p>
-                    "There is no better dog care service out there. My wife and
-                    I use their them at least twice a week!"
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <!--END First comment-->
-            <div class="carousel-item">
-              <!--START Second comment-->
-              <div class="card testimonial">
-                <img
-                  src="https://images.pexels.com/photos/40064/theme-candid-portraits-smile-woman-girl-40064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                  class="comment card-img-top rounded-circle"
-                  alt="Happy girl smiling with husky."
-                />
-
-                <div class="card-body">
-                  <h5 class="card-title">Simone</h5>
-                  <img
-                    src="images/ICONS/5_stars.PNG"
-                    alt="four-star comment rating"
-                  />
-                  <p>
-                    "Happy Tails LLC trained Lily to walk on the leash. We are
-                    very pleased for the services that Happy Tail LLC provided
-                    to Lily"
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--End second comment-->
-
-            <!--START third comment-->
-            <div class="carousel-item">
-              <div class="card testimonial">
-                <img
-                  src="images/Misc/chrispic.jpg"
-                  class="comment card-img-top rounded-circle"
-                  alt="Man kissing irritated cat"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Chris</h5>
-
-                  <img
-                    src="images/ICONS/5_stars.PNG"
-                    alt="five-star comment rating"
-                  />
-                  <p>
-                    "Fiorella is trustworthy, responsible, and best of all I
-                    know she she truly cares for the pets she looks after."
-                  </p>
-                </div>
-              </div>
-              <!--End third comment-->
+<div id="review_container"></div>
+            
             </div>
 
             <button class="btn main-btn">
               <a href="https://www.facebook.com/happytailva/"> More Reviews </a>
             </button>
+
+            <!-- We will put our React component inside this div. -->
 
             <!--END Testimonials (Carousel Inner)-->
           </div>
@@ -421,7 +356,7 @@
             <span class="sr-only">Next</span>
           </a>
 
-          <p class="disclosure">&#42;photos changed for privacy</p>
+          <p class="disclosure">&#42;photos removed for privacy</p>
 
           <!--END Testimonials Slider-->
         </div>
@@ -453,8 +388,8 @@
               <div class="card-body">
                 <h6 class="card-title">Location</h6>
                 <p>
-                  3580 Ellery Circle<br />
-                  Falls Church Virginia 22041
+                 King St<br />
+                Alexandria VA
                 </p>
               </div>
             </div>
@@ -617,6 +552,15 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+      <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- Load our React component. -->
+  <script data-plugins="transform-es2015-modules-umd"
+      type="text/babel" src="./src/data.js"></script>
+  <script data-plugins="transform-es2015-modules-umd"
+      type="text/babel" src="./src/reviews.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <div id="fb-root"></div>
   </body>
 </html>

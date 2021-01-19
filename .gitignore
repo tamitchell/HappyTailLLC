@@ -4,3 +4,4 @@ node_modules/
 .eslintcache
 HAPPYTAILS.xd
 .DS_Store
+.vscode/

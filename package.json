@@ -6,7 +6,10 @@
   "version": "1.0.0",
   "description": "client site",
   "main": "index.html",
-  "repository": "git@github.com:tamitchell/HappyTailLLC.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tamitchell/HappyTailLLC.git"
+  },
   "author": "Tasha M",
   "license": "MIT",
   "scripts": {
@@ -14,6 +17,13 @@
     "build": "NODE_ENV=prod parcel build --public-url ./ index.html"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "http-server": "^0.12.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/tamitchell/HappyTailLLC/issues"
+  },
+  "homepage": "https://github.com/tamitchell/HappyTailLLC#readme",
+  "keywords": []
 }
