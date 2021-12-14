@@ -23,11 +23,11 @@
 .slider-item {
   // position: relative;
   height: 100% !important;
-  @include absolute-center();
+  // @include absolute-center();
 }
 .slider-caption {
   max-width: 100%;
-  top: -150px;
+  top: 35%;
 }
 }
 .blog-caption,
