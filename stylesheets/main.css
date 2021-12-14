@@ -71,10 +71,7 @@
   overflow: hidden;
 }
 .banner-slider img, .banner-slider video {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 100%;
+  top: 0;
   max-width: 2000px;
 }
 .banner-slider .banner {
@@ -97,6 +94,7 @@
 .blog-caption,
 .blog-caption2,
 .blog-caption3 {
+  position: absolute;
   top: 50%;
   height: 100% !important;
   width: 50%;
@@ -275,11 +273,11 @@
   padding: 1.5em 0;
 }
 .post a {
-  color: teal;
+  color: #DB9363;
   text-decoration: none;
 }
 .post a:hover {
-  color: #00b3b3;
+  color: #e5b08c;
 }
 .post .feat-img {
   /* Landscape phones and down */
@@ -341,11 +339,11 @@
   content: " / ";
 }
 .post article header ul.cat li a {
-  color: teal;
+  color: #DB9363;
   text-decoration: none;
 }
 .post article header ul.cat li a:hover {
-  color: #00b3b3;
+  color: #e5b08c;
 }
 .post h2 {
   font-size: 175%;
@@ -375,16 +373,16 @@ ul.tags li:first-child {
 ul.tags li a {
   color: #fff !important;
   padding: 0.3em 0.65em;
-  background: teal;
+  background: #DB9363;
   display: block;
 }
 ul.tags li a:hover {
-  background: #003434;
+  background: #c46a2d;
 }
 
 .more-link {
   text-align: center;
-  background: teal;
+  background: #DB9363;
   color: #fff !important;
   padding: 0.5em 0.75em;
   display: inline-block;
@@ -397,7 +395,7 @@ ul.tags li a:hover {
   }
 }
 .more-link:hover {
-  background: #004d4d;
+  background: #d1763a;
 }
 
 .header {
@@ -571,10 +569,17 @@ a:hover {
 }
 
 /*Testimonials Styling*/
-.container.testimonials {
+.testimonials.name {
+  font-size: 1em;
+  color: #303030;
+  font-style: italic;
+  margin-bottom: 2em;
+}
+
+.testimonials {
   text-align: center;
 }
-.container.testimonials h1 {
+.testimonials h1 {
   margin-top: 1em;
   padding: 1em;
   background-image: url(/images/Misc/testimonials_background.png);
@@ -583,32 +588,26 @@ a:hover {
   letter-spacing: 3px;
   color: #fff;
 }
-.container.testimonials h3 {
-  font-size: 1em;
-  color: #303030;
-  font-style: italic;
-  margin-bottom: 2em;
-}
-.container.testimonials .comment {
+.testimonials .comment {
   margin: 0.3em auto 0 auto;
   width: 264px;
   height: 264px;
 }
-.container.testimonials .disclosure {
+.testimonials .disclosure {
   overflow-x: visible;
   text-align: left;
   font-size: 8px;
   margin-top: 5em;
 }
-.container.testimonials .card {
+.testimonials .card {
   border: none;
 }
-.container.testimonials .carousel-control-next-icon:after {
+.testimonials .carousel-control-next-icon:after {
   content: ">";
   font-size: 32px;
   color: black;
 }
-.container.testimonials .carousel-control-prev-icon:after {
+.testimonials .carousel-control-prev-icon:after {
   content: "<";
   font-size: 32px;
   color: black;
@@ -634,7 +633,6 @@ a:hover {
   flex-flow: row wrap;
 }
 .container.questions .flex-wrapper-cards {
-  display: -webkit-inline-flex;
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -644,7 +642,6 @@ a:hover {
   margin-bottom: 5em;
 }
 .container.questions .flex-wrapper-cards .card {
-  display: -webkit-inline-flex;
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -733,7 +730,6 @@ a:hover {
 }
 
 .services-img-container {
-  display: -webkit-inline-flex;
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -745,7 +741,6 @@ a:hover {
 }
 
 .accordion-container {
-  display: -webkit-inline-flex;
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -936,7 +931,6 @@ footer {
 }
 footer ul {
   list-style-type: none;
-  display: -webkit-inline-flex;
   display: inline-flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -949,4 +943,27 @@ footer ul li a {
   padding: 1em;
 }
 
-/*# sourceMappingURL=main.css.map */
+.send-message-container {
+  display: flex;
+  justify-content: center;
+}
+.send-message-container .contact-link-btn {
+  background-color: #1B110C;
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 20rem;
+  text-align: center;
+}
+.send-message-container .signup-link-btn {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

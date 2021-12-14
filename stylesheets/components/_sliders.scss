@@ -10,7 +10,7 @@
   height: 80vh;
   overflow: hidden;
   img,video {
-   @include absolute-center();
+  //  @include absolute-center();
     top: 0;
     max-width:2000px
   }
@@ -18,7 +18,7 @@
   height: 80vh;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 .slider-item {
   // position: relative;
@@ -33,7 +33,8 @@
 .blog-caption,
     .blog-caption2,
     .blog-caption3 {
-      top: 0;
+      position: absolute;
+      top: 50%;
       height: 100% !important;
       width: 50%;
       left: 50%;
@@ -43,7 +44,7 @@
         position: relative;
         height: auto;
         width: 70%;
-        
+
         h5 {
           margin: 2em 0 1em 0;
           font-size: 3vmax;
@@ -53,7 +54,7 @@
           border-bottom: 1px solid white;
         }
       }
-    
+
     }
       .blog-caption {
         background-color: $orange;
